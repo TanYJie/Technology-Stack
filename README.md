@@ -14,7 +14,7 @@ A well-organized front-end technology stack
   - 执行环境
   - 作用域与作用域链
   - 闭包
-  - script 引入方式
+  - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/script 引入方式.md)
   - 基本类型和引用类型的赋值、对象的拷贝
   - 函数的传参
   - new 运算符的执行过程

@@ -26,7 +26,7 @@ A well-organized front-end technology stack
   - 函数柯里化
   - 数组
   - 内存泄漏
-  - 垃圾回收
+  - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/垃圾回收.md)
 * 浏览器
   - 从输入 url 到展示的全过程
   - 重绘 (repaint) 与回流 (reflow)

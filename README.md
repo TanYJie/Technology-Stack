@@ -25,7 +25,7 @@ A well-organized front-end technology stack
   - 反抖与节流
   - 函数柯里化
   - 数组
-  - 内存泄漏
+  - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/内存泄漏.md)
   - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/垃圾回收.md)
 * 浏览器
   - 从输入 url 到展示的全过程

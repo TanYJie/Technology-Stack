@@ -11,3 +11,8 @@
 4. 非块级盒子的块级元素（ display 值为 inline-block、table-cell、table-caption、flex、inline-flex ）
 5. fieldset 元素（可将表单内的相关元素分组）
 
+<br>
+
+### BFC 特性及其可解决问题
+#### 1. 阻止外边距合并
+* 计算 BFC 的高度时，考虑 BFC 所包含的所有元素，连浮动元素也参与计算

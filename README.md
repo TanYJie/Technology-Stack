@@ -3,7 +3,8 @@ A well-organized front-end technology stack
 
 * CSS
   - 盒模型
-  - BFC
+  - [BFC](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/BFC.md)
+  - [外边距合并](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/外边距合并.md)
   - 层叠上下文
   - 居中布局
   - 选择器优先级
@@ -14,7 +15,7 @@ A well-organized front-end technology stack
   - 执行环境
   - 作用域与作用域链
   - 闭包
-  - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/script引入方式.md)
+  - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/script引入方式.md)
   - 基本类型和引用类型的赋值、对象的拷贝
   - 函数的传参
   - new 运算符的执行过程
@@ -25,8 +26,8 @@ A well-organized front-end technology stack
   - 反抖与节流
   - 函数柯里化
   - 数组
-  - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/内存泄漏.md)
-  - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/垃圾回收.md)
+  - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)
+  - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/垃圾回收.md)
 * 浏览器
   - 从输入 url 到展示的全过程
   - 重绘 (repaint) 与回流 (reflow)

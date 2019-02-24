@@ -25,7 +25,7 @@ A well-organized front-end technology stack
   - 类型判断
   - 反抖与节流
   - 函数柯里化
-  - 数组
+  - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
   - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)
   - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/垃圾回收.md)
 * 浏览器

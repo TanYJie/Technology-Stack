@@ -42,6 +42,6 @@ A well-organized front-end technology stack
 * Vue
   - 生命周期
 * 数据结构和算法
-  - 排序算法
+  - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)
   - 数据树
   - 五大算法

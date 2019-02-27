@@ -3,6 +3,8 @@ A well-organized front-end technology stack
 
 * CSS
   - 盒模型
+  - 水平居中
+  - 垂直居中
   - [BFC](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/BFC.md)
   - [外边距合并](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/外边距合并.md)
   - 层叠上下文

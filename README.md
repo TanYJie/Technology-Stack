@@ -8,7 +8,7 @@
   - [外边距合并](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/外边距合并.md)
   - 层叠上下文
   - 居中布局
-  - [选择器优先级]((https://github.com/TanYJie/Technology-Stack/blob/master/CSS/选择器优先级.md))
+  - [选择器优先级](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/选择器优先级.md)
   - 浮动与清除浮动
   - link 和 @import 区别
 * JavaScript

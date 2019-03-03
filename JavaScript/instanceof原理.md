@@ -1,14 +1,14 @@
 ```javascript
 //这个函数可以起到和 instanceof 相同的效果
 function myInstanceof(obj,category){
-	//console.log(typeof category);
-	while(obj != null){
-		if(obj == category.prototype){
-			return true;
-		}
-		obj = obj.__proto__;
-	}
-	return false;
+    //console.log(typeof category);
+    while(obj != null){
+        if(obj == category.prototype){
+	    return true;
+        }
+        obj = obj.__proto__;
+    }
+    return false;
 }
 
 

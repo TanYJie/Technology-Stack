@@ -31,9 +31,9 @@ function Person(name,age){
     }
 }
 
-var obj = new Object();              //（1）
-obj.__proto__ = Person.prototype;    //（2）
-Person.call(obj,"Nicholas",29);      //（3）
+var obj = new Object();              //（1）创建一个新对象
+obj.__proto__ = Person.prototype;    //（2）把 obj 的 __proto__ 指向 Person.prototype
+Person.call(obj,"Nicholas",29);      //（3）将构造函数的作用域赋给新对象 obj，执行构造函数中的代码
 
 console.log(obj instanceof Person);  //true
    ```

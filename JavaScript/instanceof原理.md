@@ -1,3 +1,5 @@
+# instanceof 原理
+
 ```javascript
 //这个函数可以起到和 instanceof 相同的效果
 function myInstanceof(obj,category){

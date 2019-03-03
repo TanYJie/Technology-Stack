@@ -42,6 +42,7 @@
   - 安全
 * Vue
   - 生命周期
+  - 双向绑定
 * 数据结构和算法
   - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)
   - 数据树

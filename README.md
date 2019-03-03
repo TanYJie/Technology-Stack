@@ -19,8 +19,8 @@
   - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/script引入方式.md)
   - 基本类型和引用类型的赋值、对象的拷贝
   - 函数的传参
-  - [new 运算符的执行过程](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/new%20运算符的执行过程.md)
-  - instansof 原理
+  - [new 运算符的执行过程](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/new运算符的执行过程.md)
+  - [instansof 原理](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/instanceof原理.md)
   - 继承
   - 类型转换
   - 类型判断

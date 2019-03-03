@@ -46,8 +46,5 @@
   - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)
   - 数据树
   - 五大算法
-* 综合面试题
-  - 从输入 url 到页面加载完成发生了什么？
-  
 * [春招（从被虐开始）](https://github.com/TanYJie/Technology-Stack/blob/master/面经/春招.md)
   

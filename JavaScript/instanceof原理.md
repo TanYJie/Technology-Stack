@@ -4,6 +4,7 @@
 //这个函数可以起到和 instanceof 相同的效果
 function myInstanceof(obj,category){
     //console.log(typeof category);
+    obj = obj.__proto__;
     while(obj != null){
         if(obj == category.prototype){
 	    return true;

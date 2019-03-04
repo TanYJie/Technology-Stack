@@ -48,6 +48,5 @@
   - 数据树
   - 五大算法
 * [春招（从被虐开始）](https://github.com/TanYJie/Technology-Stack/blob/master/面经/春招.md)
-* code
-  - [重写 instanceof 操作符，闭包，重写类型判断](https://github.com/TanYJie/Technology-Stack/blob/master/code/JavaScript%20instanceof%20闭包%20类型判断.md)
+* [code](https://github.com/TanYJie/Technology-Stack-Interview-Experience/tree/master/code)
   

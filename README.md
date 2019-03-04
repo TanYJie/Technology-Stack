@@ -23,7 +23,7 @@
   - [instansof 原理](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/instanceof原理.md)
   - 继承
   - 类型转换
-  - 类型判断
+  - [类型判断](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/类型判断.md)
   - 反抖与节流
   - 函数柯里化
   - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
@@ -42,7 +42,7 @@
   - 安全
 * Vue
   - 生命周期
-  - 双向绑定
+  - [双向绑定](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/双向绑定.md)
 * 数据结构和算法
   - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)
   - 数据树

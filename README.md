@@ -14,7 +14,7 @@
 * JavaScript
   - 执行环境
   - 作用域与作用域链
-  - 闭包
+  - [闭包](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/闭包.md)
   - 原型与原型链、构造函数
   - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/script引入方式.md)
   - 基本类型和引用类型的赋值、对象的拷贝

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS遮罩</title>
+</head>
+<body>
+    <div class="father">
+        <div class="father_mask"></div>  
+	<div class="child"></div>
+    </div>
+</body>
+</html>
+
+<style>
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+.father{
+    position: absolute;
+    height: 320px;
+    width: 320px;
+    left: 50%;
+    top: 50%;
+    background: url(https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/面经/image/CSS遮罩.png);
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    margin: -160px auto auto -160px;
+    text-align: center;
+}
+
+.father_mask{
+    float: left;
+    height: 320px;
+    width: 320px;
+    background: rgba(0,0,0,0.4);
+}
+
+.child{
+    height: 160px;
+    width: 160px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 1;
+    z-index: 99;
+    background: url(https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/面经/image/CSS遮罩.png);
+    background-repeat: no-repeat; 
+    background-size: 200% 200%;
+    background-position: 50% 50%;
+}
+
+
+</style>
+
+
+<script>
+//附上判断类型的函数.
+function type(target){
+    var ret = typeof(target) ;
+    var template = {
+        '[object Array]'  : 'array',
+        '[object Object]' : 'object',
+        '[object String]' : 'string - object',
+        '[object Number]' : 'Number - object',
+        '[object Boolean]': 'Boolean - object',
+    }
+    if(target === null){
+        return 'null';
+    }
+    if(ret == 'object'){
+        var str = Object.prototype.toString.call(target);
+        return template[str];
+    }
+    else {
+        return ret;
+    }
+}
+</script>

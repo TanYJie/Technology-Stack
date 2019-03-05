@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双向绑定</title>
+</head>
+<body>
+	<div id="test" style="height: 50px"></div>
+	<button onclick="start()">start</button>
+	<button onclick="stop()">stop</button>
+</body>
+</html>
+
+<script>
+
+var data={
+	val:""
+};
+var id;
+
+//立即执行函数
+(function addWatcher(){
+	Object.defineProperty(data,"val",{
+		get:function(){
+			return this.value;
+		},
+		set:function(val){
+			this.value = val;
+			var ele = document.getElementById("test");
+			ele.innerHTML = val;
+		}
+	})
+})();
+
+function start(){
+	id = setInterval(function() {
+		var d = new Date();
+		data.val = d;
+	},1000);
+}
+function stop(){
+	clearInterval(id);
+}
+
+</script>

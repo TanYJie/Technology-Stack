@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双向绑定demo-输入框</title>
+</head>
+<body>
+	<div id="test" style="height: 50px"></div>
+	<input id="test-input" value="" oninput="changeInput()"/>
+</body>
+</html>
+
+<script>
+
+var data={
+	val:""
+};
+
+//立即执行函数
+(function addWatcher(){
+	Object.defineProperty(data,"val",{
+		get:function(){
+			return this.value;
+		},
+		set:function(val){
+			this.value = val;
+			var ele = document.getElementById("test");
+			ele.innerHTML = val;
+		}
+	})
+})();
+
+function changeInput(){
+	data.val = document.getElementById("test-input").value;
+}
+
+</script>

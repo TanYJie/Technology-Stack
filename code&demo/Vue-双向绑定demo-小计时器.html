@@ -5,9 +5,11 @@
     <title>双向绑定</title>
 </head>
 <body>
-	<div id="test" style="height: 50px"></div>
-	<button onclick="start()">start</button>
-	<button onclick="stop()">stop</button>
+	<div id="clock">
+		<div id="test"></div>
+		<button onclick="start()">start</button>
+		<button onclick="stop()">stop</button>
+	</div>
 </body>
 </html>
 
@@ -16,7 +18,7 @@
 var data={
 	val:""
 };
-var id;
+var id=null;
 
 //立即执行函数
 (function addWatcher(){
@@ -33,13 +35,34 @@ var id;
 })();
 
 function start(){
-	id = setInterval(function() {
-		var d = new Date();
-		data.val = d;
-	},1000);
+	if(id == null){
+		id = setInterval(function() {
+			var d = new Date();
+			data.val = d.getFullYear()+"-"+(d.getMonth()+1)+"-"+(d.getDate())+" "
+			+(d.getHours()+1)+":"+(d.getMinutes()+1)+":"+(d.getSeconds()+1);
+		},1000);
+	}
 }
+
 function stop(){
 	clearInterval(id);
+	id = null;
 }
 
 </script>
+
+<style type="text/css">
+	
+#test{
+	width: 400px;
+	height: 50px;
+	border: 2px dotted black;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 20px;
+}
+#clock{
+	width: 400px;
+	text-align: center;
+}
+</style>

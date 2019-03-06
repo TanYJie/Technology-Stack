@@ -41,8 +41,11 @@
   - 跨域
   - 安全
 * Vue
+  - [官方文档链接](https://cn.vuejs.org/)
   - 生命周期
   - [双向绑定](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/双向绑定.md)
+  - 路由
+  - vuex
 * Webpack
 * 前端性能&兼容性
 * node
@@ -51,5 +54,5 @@
   - 数据树
   - 五大算法
 * [2019 春招](https://github.com/TanYJie/Technology-Stack/blob/master/面经/春招.md)
-* [code&demo](https://github.com/TanYJie/Technology-Stack-Interview-Experience/tree/master/code&demo)
+* [code & demo](https://github.com/TanYJie/Technology-Stack-Interview-Experience/tree/master/code&demo)
   

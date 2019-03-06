@@ -43,10 +43,13 @@
 * Vue
   - 生命周期
   - [双向绑定](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/双向绑定.md)
+* Webpack
+* 前端性能&兼容性
+* node
 * 数据结构和算法
   - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)
   - 数据树
   - 五大算法
-* [春招（从被虐开始）](https://github.com/TanYJie/Technology-Stack/blob/master/面经/春招.md)
+* [2019 春招](https://github.com/TanYJie/Technology-Stack/blob/master/面经/春招.md)
 * [code&demo](https://github.com/TanYJie/Technology-Stack-Interview-Experience/tree/master/code&demo)
   

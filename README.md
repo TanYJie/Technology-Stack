@@ -47,7 +47,7 @@
   - 路由
   - vuex
 * Webpack
-* 前端性能&兼容性
+* 前端性能 & 兼容性
 * node
 * 数据结构和算法
   - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)

@@ -1,5 +1,5 @@
-# Technology-Stack&Interview-Experience
-
+# Technology-Stack & Interview-Experience
+这里是本人用来复习的前端技术栈和整理的一些面经，希望能获得大家的 star ~
 * CSS
   - [盒模型](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/盒模型.md)
   - 水平居中
@@ -35,18 +35,24 @@
 * 服务端与网络
   - http / https 协议
   - [状态码](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/状态码.md)
-  - get 与 post
+  - [get 与 post](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/get与post.md)
   - [TCP 三次握手和四次挥手](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/TCP三次握手和四次挥手.md)
   - websocket
   - 跨域
   - 安全
 * Vue
+  - [官方文档链接](https://cn.vuejs.org/)
   - 生命周期
   - [双向绑定](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/双向绑定.md)
+  - 路由
+  - vuex
+* Webpack
+* 前端性能 & 兼容性
+* node
 * 数据结构和算法
   - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)
   - 数据树
   - 五大算法
-* [春招（从被虐开始）](https://github.com/TanYJie/Technology-Stack/blob/master/面经/春招.md)
-* [code&demo](https://github.com/TanYJie/Technology-Stack-Interview-Experience/tree/master/code&demo)
+* [2019 春招](https://github.com/TanYJie/Technology-Stack/blob/master/面经/春招.md)
+* [code & demo](https://github.com/TanYJie/Technology-Stack-Interview-Experience/tree/master/code&demo)
   

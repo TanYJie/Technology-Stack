@@ -1,48 +1,36 @@
-# BFC
-
-　　BFC（Blocking Formatting Context），块级格式上下文，创建了 BFC 的元素就是一个独立的盒子，**里面的子元素不会在布局上影响外面的元素**，反之亦然，同时 BFC 仍然属于文档中的普通流。
+# BOM 
+　　BOM （浏览器对象模型）提供了很多对象，用于访问浏览器的功能。多年来，缺少事实上的规范导致 BOM 既有意思又有问题。
+  
   <br>
-　　
-### BFC 形成条件
-　　BFC 的形成条件主要有（满足以下一条即可）：  
-1. 浮动元素（ float 不为 none ）
-2. overflow 不为 visible（ hidden，auto，scroll ）
-3. position 是 absolute 或 fixed
-4. 非块级盒子的块级元素（ display 值为 inline-block、table-cell、table-caption、flex、inline-flex ）
-5. fieldset 元素（可将表单内的相关元素分组）
-
-<br>
-
-### BFC 特性及其可解决问题
-#### 1. BFC 可以防止外边距合并
-　　[外边距合并](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/外边距合并.md)的一种常见状况为：块级标签之间竖直方向的 margin 会以大的为准，这就是 margin 的塌陷现象。此时，将产生合并的两个元素置于不同的 BFC 中，就可以避免外边距合并的现象。 注意，同一个 BFC 中的元素之间仍会发生外边距合并的现象。
-
-#### 2. BFC 可以防止浮动元素造成的 "父元素高度塌陷" 问题
-　　在计算 BFC 的高度时，考虑 BFC 所包含的所有元素，连浮动元素也参与计算。所以就不会产生 **高度塌陷** 的问题。
-
-#### 3. BFC 可以消除浮动元素造成的 "文字环绕" 现象
-　　浮动元素脱离了文档流，但没有脱离文本流，这就导致文字环绕浮动元素，造成了 **文字环绕** 。这是没有创建 BFC 之前的代码。
-```html
-<div style="height: 100px;
-            width: 100px;
-            float: left;
-            background: lightblue">我是一个左浮动的元素</div>
-<div style="width: 200px; 
-            height: 200px;
-            background: grey">我是一个没有设置浮动, 也没有触发 BFC 的元素</div>
+  
+# window 对象
+　　BOM 的核心对象是 window，它表示浏览器的一个实例。它同时扮演着 ECMAScript 中 Global 对象的角色，所有在全局作用域中声明的变量、函数都会变成 window 对象的属性和方法。
+　　注意一点，使用`var`定义变量与在 window 对象上直接定义属性有一点差别：
+  
 ```
-![文字环绕1](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/images/文字环绕-1.png)
+var age = 29;
+window.color = "red";
 
-　　将灰色元素创建 BFC 后：
-```html
-<div style="height: 100px;
-            width: 100px;
-            float: left;
-            background: lightblue">我是一个左浮动的元素</div>
-<div style="width: 200px; 
-            height: 200px;
-            background: grey;
-            overflow:hidden">我是一个没有设置浮动, 触发了 BFC 的元素</div>
+delete window.age;   //返回 false
 
+delete window.color; //返回 true
+
+console.log(window.age);    //29
+console.log(window.color);  //undefined
 ```
-![文字环绕2](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/images/文字环绕-2.png)
+　　实质上是使用`var`语句添加的属性的 [[Configurable]] 的特性值被设置为 false。
+  
+  <br>
+  
+# location 对象
+　　location 对象即是 window 对象的属性，也是 document 对象的属性；window.location 和 document.location 引用的是同一个对象。下表为 location 对象的所有属性。
+  
+| 属性名 | 例子 | 说明 | 
+|:------:|:------:|:------:|
+|hash|"#contents"|返回 URL 中的 hash（#号后跟 0 或多个字符）|
+|host|"www.wrox.com:8080"|返回服务器名称和端口号|
+|hostname|"www.wrox.com"|返回服务器名称|
+|hostname|"http://www.wrox.com"|返回完整 URL，和 toString（）方法返回值相同|
+|port|"8080"|返回端口号|
+|protocal|"https:"|返回协议|
+|search|"?q=javascript"|返回 URL 的查询字符串|

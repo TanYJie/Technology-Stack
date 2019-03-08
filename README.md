@@ -2,7 +2,7 @@
 这里是本人用来复习的前端技术栈和整理的一些面经，希望能获得大家的 star ~
 * HTML
   - 块级元素 & 行内元素 & 行块级元素
-  - [HTML5新特性 & 新功能](https://www.cnblogs.com/zxjwlh/p/4460330.html)
+  - [HTML5 新特性 & 新功能](https://www.cnblogs.com/zxjwlh/p/4460330.html)
 * CSS
   - [盒模型](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/盒模型.md)
   - 水平居中

@@ -13,6 +13,12 @@
 * post 请求安全性较高
 * post 请求数据没有长度限制
 
+# W3C 上的 get 和 post 区别
+
+<div align="center">
+  <img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/get和post.png" />
+</div>
+
 # 如何取消 get 请求的缓存
 **1.URL 随机后缀**
 

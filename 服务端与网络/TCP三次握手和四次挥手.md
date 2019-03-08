@@ -1,5 +1,11 @@
 # TCP 三次握手和四次挥手
 
+<div align="center">
+  <img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP三次握手.png"/>
+</div>
+<div align="center">
+  <img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP四次挥手.png"/>
+</div>
 ![TCP三次握手](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP三次握手.png)
 
 ![TCP四次挥手](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP四次挥手.png)

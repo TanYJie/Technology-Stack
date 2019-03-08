@@ -12,7 +12,7 @@
 
 <br>
 
-### 四次握手
+### 四次挥手
 <div align="center">
   <img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP四次挥手.png"/>
 </div>

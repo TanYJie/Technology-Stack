@@ -1,17 +1,23 @@
 # TCP 三次握手和四次挥手
 
+### 三次握手
 <div align="center">
   <img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP三次握手.png"/>
 </div>
-<div align="center">
-  <img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP四次挥手.png"/>
-</div>
-![TCP三次握手](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP三次握手.png)
 
-![TCP四次挥手](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP四次挥手.png)
+<br>
 
 ### TCP 为什么不是两次握手而是三次？
 　　如果仅两次连接可能出现一种情况：客户端发送完连接报文（第一次握手）后由于网络不好，延时很久后报文到达服务端，服务端接收到报文后向客户端发起连接（第二次握手）。此时客户端会认定此报文为失效报文，但在两次握手情况下服务端会认为已经建立起了连接，服务端会一直等待客户端发送数据，但因为客户端会认为服务端第二次握手的回复是对失效请求的回复，不会去处理。这就造成了服务端一直等待客户端数据的情况，浪费资源。
+
+<br>
+
+### 四次握手
+<div align="center">
+  <img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/TCP四次挥手.png"/>
+</div>
+
+<br>
 
 ### TCP 为什么挥手是四次而不是三次？
 　　TCP是全双工的，它允许两个方向的数据传输被独立关闭。当主动发起关闭的一方关闭连接之后，TCP进入半关闭状态，此时主动方可以只关闭输出流。

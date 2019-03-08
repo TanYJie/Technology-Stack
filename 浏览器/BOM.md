@@ -34,3 +34,16 @@ console.log(window.color);  //undefined
 |port|"8080"|返回端口号|
 |protocal|"https:"|返回协议|
 |search|"?q=javascript"|返回 URL 的查询字符串|
+
+<br>
+
+　　以下方法可以改变浏览器位置：
+```javascript
+location.assign("http://www.wrox.com");
+window.location = "http://www.wrox.com";   //本质上也会调用 assign()
+location.href = "http://www.wrox.com";     //本质上也会调用 assign()
+location.replace("http://www.wrox.com");   //若如此做，用户不能回到之前一个页面
+```
+
+　　使用 `reload()` 可以重新加载当前显示页面，如果不传递任何参数，页面会以**最有效的方式**重新加载，也就是说可能使用浏览器缓存。如果要强制从服务器加载，需要传递参数 true。
+　　

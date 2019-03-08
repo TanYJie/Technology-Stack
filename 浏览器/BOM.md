@@ -56,9 +56,8 @@ location.replace("http://www.wrox.com");   //若如此做，用户不能回到�
 　　调用`navigator.userAgent`来识别浏览器，下表是一些返回值。
   
 | 浏览器 | navigator.userAgent 返回值 |
-|:------:|:------:|:------:|
+|:------:|:------:|
 |safari|//Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1|
 |chrome|//Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.220 Safari/535.1|
 |opera|//Opera/9.80 (Windows NT 5.1; U; Edition Next; zh-cn) Presto/2.8.158 Version/11.50|
 |firefox|//Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2.24) Gecko/20111103 Firefox/3.6.24|
-|ie|//Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; .NET4.0C; .NET4.0E; InfoPath.2)|

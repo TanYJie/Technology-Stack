@@ -52,7 +52,7 @@ location.replace("http://www.wrox.com");   //若如此做，用户不能回到�
 # navigator 对象
 　　navigator 对象现在成为 **识别客户端浏览器** 的实施标准，另外常用的还包括 **检测插件**。
   
-###### 识别浏览器
+#### 识别浏览器
 　　调用`navigator.userAgent`来识别浏览器，下表是一些返回值。
   
 | 浏览器 | navigator.userAgent 返回值 |
@@ -61,3 +61,11 @@ location.replace("http://www.wrox.com");   //若如此做，用户不能回到�
 |chrome|//Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.220 Safari/535.1|
 |opera|//Opera/9.80 (Windows NT 5.1; U; Edition Next; zh-cn) Presto/2.8.158 Version/11.50|
 |firefox|//Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2.24) Gecko/20111103 Firefox/3.6.24|
+
+#### 检测插件
+　　使用 `navigator.plugins` 获取插件的数组，数组的每一项包含以下属性：
+  * `name`：插件名
+  * `description`：插件描述
+  * `filename`：插件文件名
+  * `length`：插件所处理的 MIME 类型数量
+  

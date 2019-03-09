@@ -15,11 +15,11 @@
   - 浮动与清除浮动
   - link 和 @import 区别
 * JavaScript
+  - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/script引入方式.md)
   - 执行环境
   - 作用域与作用域链
   - [闭包](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/闭包.md)
   - 原型与原型链、构造函数
-  - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/script引入方式.md)
   - [基本类型和引用类型的赋值 & 对象的拷贝](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/JavaScript/基本类型和引用类型的赋值&对象的拷贝.md)
   - 函数的传参
   - [new 运算符的执行过程](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/new运算符的执行过程.md)
@@ -38,9 +38,9 @@
   - 重绘 (repaint) 与回流 (reflow)
 * 服务端与网络
   - http / https 协议
+  - [TCP 三次握手和四次挥手](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/TCP三次握手和四次挥手.md)
   - [状态码](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/状态码.md)
   - [get 与 post](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/get与post.md)
-  - [TCP 三次握手和四次挥手](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/TCP三次握手和四次挥手.md)
   - websocket
   - 跨域
   - 安全

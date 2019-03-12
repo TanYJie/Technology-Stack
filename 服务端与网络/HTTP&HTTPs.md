@@ -1,5 +1,18 @@
+## HTTP 请求报文
+<div align="center">
+<img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/HTTP请求.png"/>
+</div>
 
-### HTTPs
+<br>
+
+## HTTP 响应报文
+<div align="center">
+<img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/HTTP响应.png"/>
+</div>
+
+<br>
+
+## HTTPs
 HTTP 有以下安全性问题：
 1. 通信使用明文，内容可能会被窃听；
 2. 不验证通信方的身份，因此有可能遭遇伪装；
@@ -10,3 +23,7 @@ HTTP 有以下安全性问题：
 　　数字证书认证机构（CA，Certificate Authority）颁发的公开密钥证书，可以通过 CA 对其进行验证。进行 HTTPs 通信时，服务器会把证书发送给客户端，客户端取得其中的公开密钥之后，就可以开始加密过程。
   
 　　使用 OpenSSL 这套开源程序，每个人都可以构建一套属于自己的认证机构，从而自己给自己颁发服务器证书。浏览器在访问该服务器时，会显示“无法确认连接安全性”或“该网站的安全证书存在问题”等警告消息。
+
+<div align="center">
+<img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/HTTPs.png"/>
+</div>

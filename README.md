@@ -28,10 +28,10 @@
   - 类型转换
   - [类型判断](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/类型判断.md)
   - 反抖与节流
-  - 函数柯里化
   - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
   - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)
   - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/垃圾回收.md)
+  - 函数柯里化
 * 浏览器
   - [BOM](https://github.com/TanYJie/Technology-Stack/blob/master/浏览器/BOM.md)
   - [从输入 url 到页面加载完成的全过程](https://www.cnblogs.com/daijinxue/p/6640153.html)
@@ -42,6 +42,7 @@
   - [状态码](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/状态码.md)
   - [get 与 post](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/get与post.md)
   - [跨域](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/跨域.md)
+  - 缓存
   - 安全
   - websocket
 * Vue

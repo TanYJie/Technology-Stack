@@ -35,14 +35,14 @@
 * 浏览器
   - [BOM](https://github.com/TanYJie/Technology-Stack/blob/master/浏览器/BOM.md)
   - [从输入 url 到页面加载完成的全过程](https://www.cnblogs.com/daijinxue/p/6640153.html)
-  - 重绘 (repaint) 与回流 (reflow)
+  - 重绘 (repaint) 与重排 (reflow)
 * 服务端与网络
   - [http / https 协议](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/HTTP&HTTPs.md)
   - [TCP](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/TCP.md)
   - [状态码](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/状态码.md)
   - [get 与 post](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/get与post.md)
   - [跨域](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/跨域.md)
-  - 缓存
+  - [缓存](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/缓存.md)
   - 安全
   - websocket
 * Vue

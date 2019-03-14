@@ -16,17 +16,16 @@
   - link 和 @import 区别
 * JavaScript
   - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/script引入方式.md)
+  - 操作符 && 类型转换
+  - [类型判断](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/类型判断.md)
   - 执行环境
   - 作用域与作用域链
   - [闭包](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/闭包.md)
   - 原型与原型链、构造函数
   - [基本类型和引用类型的赋值 & 对象的拷贝](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/JavaScript/基本类型和引用类型的赋值&对象的拷贝.md)
-  - 函数的传参
   - [new 运算符的执行过程](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/new运算符的执行过程.md)
   - [instansof 原理](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/instanceof原理.md)
   - 继承
-  - 类型转换
-  - [类型判断](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/类型判断.md)
   - 反抖与节流
   - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
   - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)

@@ -56,7 +56,7 @@
 * Node
   - Node 的模块实现
   - 包和 NPM
-  - AMD 和 CMD
+  - [AMD 和 CMD](https://github.com/TanYJie/Technology-Stack/blob/master/Node/AMD和CMD.md)
 * 数据结构和算法
   - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)
   - 数据树

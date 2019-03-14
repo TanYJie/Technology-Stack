@@ -1,10 +1,5 @@
 # AMD 和 CMD
 
-| -- | Cookie | sessionStorage | localStorage | 
-|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
-| BOM | DOM | ECMAScript | FS | TCP | Stream | Buffer | ... |
-|  | DOM | ECMAScript | FS | TCP | Stream | Buffer | ... |
-
 <table style="text-align:center;width:100%">
    <tr>
         <td colspan="3">浏览器</td>
@@ -25,3 +20,4 @@
         <td colspan="6">Node</td> 
    </tr>
 </table>
+

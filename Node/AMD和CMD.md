@@ -1,8 +1,8 @@
 # AMD 和 CMD
 
-<table style="text-align:center;width:100%">
+<table align="center">
    <tr>
-        <td text-align="center" colspan="3">---浏览器---</td>
+        <td text-align:center colspan="3">---浏览器---</td>
         <td colspan="5">-----CommonJS-----</td>  
    </tr>
    <tr>

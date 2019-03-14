@@ -44,7 +44,6 @@
   - [缓存](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/缓存.md)
   - [客户端存储（Cookie & Storage）](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/客户端存储.md)
   - 安全
-  - websocket
 * Vue
   - [官方文档链接](https://cn.vuejs.org/)
   - [如何理解"渐进式"](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/Vue渐进式框架的理解.md)

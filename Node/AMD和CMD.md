@@ -2,11 +2,11 @@
 
 <table style="text-align:center;width:100%">
    <tr>
-        <td colspan="3">---浏览器---</td>
+        <td text-align="center" colspan="3">---浏览器---</td>
         <td colspan="5">-----CommonJS-----</td>  
    </tr>
    <tr>
-   	<td textalign="center">BOM</td>
+   	<td >BOM</td>
 	<td>DOM</td>
 	<td>ECMAScript</td>
 	<td>FS</td>

@@ -2,8 +2,8 @@
 
 <table align="center">
    <tr>
-        <td text-align:center colspan="3">---浏览器---</td>
-        <td colspan="5">-----CommonJS-----</td>  
+        <td text-align:center colspan="3">浏览器</td>
+        <td colspan="5">CommonJS</td>  
    </tr>
    <tr>
    	<td >BOM</td>
@@ -17,7 +17,7 @@
    </tr>
    <tr>
         <td colspan="2">--W3C--</td>
-        <td colspan="6">------Node------</td> 
+        <td colspan="6">Node</td> 
    </tr>
 </table>
 

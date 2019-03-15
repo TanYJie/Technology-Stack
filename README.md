@@ -26,11 +26,9 @@
   - [new 运算符的执行过程](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/new运算符的执行过程.md)
   - [instansof 原理](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/instanceof原理.md)
   - 继承
-  - 反抖与节流
   - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
   - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)
   - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/垃圾回收.md)
-  - 函数柯里化
 * 浏览器
   - [BOM](https://github.com/TanYJie/Technology-Stack/blob/master/浏览器/BOM.md)
   - [从输入 url 到页面加载完成的全过程](https://www.cnblogs.com/daijinxue/p/6640153.html)

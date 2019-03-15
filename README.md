@@ -32,7 +32,7 @@
 * 浏览器
   - [BOM](https://github.com/TanYJie/Technology-Stack/blob/master/浏览器/BOM.md)
   - [从输入 url 到页面加载完成的全过程](https://www.cnblogs.com/daijinxue/p/6640153.html)
-  - 重绘与重排（repaint & reflow）
+  - [回流与重绘（reflow & repaint）](https://github.com/TanYJie/Technology-Stack/blob/master/浏览器/回流与重绘.md)
 * 服务端与网络
   - [http / https 协议](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/HTTP&HTTPs.md)
   - [TCP](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/TCP.md)

@@ -1,4 +1,9 @@
-console.log(Object.prototype.valueOf.call(1));             // Number {1}
+
+var num = 1;
+console.log(num.valueOf());             // 1
+console.log(typeof num.valueOf());      // number
+
+console.log(Object.prototype.valueOf.call(1));             // Number {1}
 console.log(typeof Object.prototype.valueOf.call(1));      // object
 console.log(Object.prototype.valueOf.call(true));          // Boolean {true}
 console.log(typeof Object.prototype.valueOf.call(true));   // object

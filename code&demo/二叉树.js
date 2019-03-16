@@ -22,13 +22,11 @@ function TreeNode(x) {
  */
 function reConstructBinaryTree(pre, vin)
 {
-	if(vin.length==0){
-		return null;
-	}
-	var node = new TreeNode(pre[0]);
-    if(vin.length==1){
+    if(vin.length==0)
+	return null;
+    var node = new TreeNode(pre[0]);
+    if(vin.length==1)
         return node;
-    }
     var position = vin.indexOf(pre[0]);
     if(position==-1){
     	console.error("数据错误!");
@@ -45,12 +43,10 @@ function reConstructBinaryTree(pre, vin)
  */
 function TreeDepth(pRoot)
 {
-	if(!pRoot){
+    if(!pRoot)
         return 0;
-    }
-    if(!pRoot.left&&!pRoot.right){
+    if(!pRoot.left&&!pRoot.right)
         return 1;
-    }
     var left = TreeDepth(pRoot.left);
     var right = TreeDepth(pRoot.right);
     return (left>right)?(left+1):(right+1);

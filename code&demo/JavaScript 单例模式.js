@@ -23,7 +23,7 @@ var mySingleton = (function(){
 			instance = init();
 		}
 		return instance;
-	};
+	};a
 }());
 
 console.log(mySingleton()==mySingleton());        //检查是否单例

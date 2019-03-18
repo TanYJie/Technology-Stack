@@ -1,29 +1,31 @@
 var mySingleton = (function(){
-	var instance;
+    var instance;
 
-	function init(){
-		var privateVariable = "This is a privateVariable";
-		function privateMethod(){
-			console.log("This is a privateMethod");
-		}
-		return {
-			getPrivateVariable:function(){
-				return privateVariable;
-			},
-			setPrivateVariable:function(value){
-				privateVariable = value;
-			},
-			getPrivateMethod:function(){
-				privateMethod();
-			}
-		}
-	};
-	return function(){
-		if(!instance){
-			instance = init();
-		}
-		return instance;
-	};a
+    function init(){
+	var privateVariable = "This is a privateVariable";
+	function privateMethod(){
+		console.log("This is a privateMethod");
+	}
+	return {
+   	    getPrivateVariable:function(){
+		return privateVariable;
+	    },
+	    setPrivateVariable:function(value){
+	 	privateVariable = value;
+	    },
+	    getPrivateMethod:function(){
+		privateMethod();
+	    }
+	}
+    };
+
+    return function(){
+	if(!instance){
+            instance = init();
+	}
+	return instance;
+    };
+	
 }());
 
 console.log(mySingleton()==mySingleton());        //检查是否单例

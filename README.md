@@ -25,7 +25,7 @@
   - [基本类型和引用类型的赋值 & 对象的拷贝](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/JavaScript/基本类型和引用类型的赋值&对象的拷贝.md)
   - [new 运算符的执行过程](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/new运算符的执行过程.md)
   - [instansof 原理](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/instanceof原理.md)
-  - 继承
+  - [继承](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/继承.md)
   - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
   - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)
   - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/垃圾回收.md)

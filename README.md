@@ -13,7 +13,7 @@
   - [外边距合并](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/外边距合并.md)
   - [层叠上下文](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/层叠上下文.md)
   - 浮动与清除浮动
-  - link 和 @import 区别
+  - [link 和 @import 区别](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/link和@import区别.md)
 * JavaScript
   - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/script引入方式.md)
   - [操作符 & 类型转换](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/操作符&类型转换.md)

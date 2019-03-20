@@ -31,14 +31,39 @@
 　　Node 的模块引入过程，几乎全都是同步的。但如果前端模块也采用同步方式引入，那将会在用户体验上造成很大问题。CommonJS 为 JavaScript 制定的围观不完全适合前端的应用场景。最终 AMD 规范在前端应用场景胜出，它的中文名称是 **异步模块定义**。
   
 　　因为是异步引入模块，所以 AMD 需要在声明模块时指定所有的依赖。
+#### Examples
+　　设置ID为 "alpha" 的模块，使用 require，exports 和 ID 为 "beta" 的模块：
   ```javascript
-  define(['dep1','dep2'],function(dep1,dep2){
-      return function(){};
-  });
+   define("alpha", ["require", "exports", "beta"], function (require, exports, beta) {
+       exports.verb = function() {
+           return beta.verb();
+           //Or:
+           return require("beta").verb();
+       }
+   });
   ```
   
+　　一个返回对象文字的匿名模块：
+   ```javascript
+   define(["alpha"], function (alpha) {
+       return {
+         verb: function(){
+           return alpha.verb() + 2;
+         }
+       };
+   });
+   ```
+　　使用简化的CommonJS包装定义的模块：
+   ```javascript
+   define(function (require, exports, module) {
+       var a = require('a'),
+           b = require('b');
+
+       exports.action = function () {};
+   });
+   ```
 ### CMD
-　　CMD 规范由国内的玉波提出，和 AMD 规范相比，CMD 模块规范更接近 Node 对 CommonJS 规范的定义。CMD 支持动态引入，依赖即插即用，符合同步的思想。
+　　CMD 规范由国内的玉伯提出，和 AMD 规范相比，CMD 模块规范更接近 Node 对 CommonJS 规范的定义。CMD 支持动态引入，依赖即插即用，符合同步的思想。
   ```javascript
   define(function(require, exports, module){
       //引入

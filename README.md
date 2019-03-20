@@ -5,13 +5,13 @@
   - [块级元素 & 行内元素 & 行块级元素](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/HTML/块级元素&行内元素&行块级元素.md)
   - [HTML5 新特性 & 新功能](https://www.cnblogs.com/zxjwlh/p/4460330.html)
 * CSS
+  - [选择器优先级](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/CSS选择器.md)
   - [盒模型](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/盒模型.md)
   - 水平居中
   - 垂直居中
   - [BFC](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/BFC.md)
   - [外边距合并](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/外边距合并.md)
   - [层叠上下文](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/层叠上下文.md)
-  - [选择器优先级](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/选择器优先级.md)
   - 浮动与清除浮动
   - link 和 @import 区别
 * JavaScript

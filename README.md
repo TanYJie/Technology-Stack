@@ -52,6 +52,7 @@
 * Webpack
   - [官方文档](https://www.webpackjs.com/)
   - [知乎教程](https://zhuanlan.zhihu.com/p/57722935?utm_source=qq&utm_medium=social&utm_oi=910792540654022656)
+  - [Loader & Plugin](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Webpack/Loader&Plugin.md)
 * 前端性能 & 兼容性
 * Node
   - Node 的模块实现

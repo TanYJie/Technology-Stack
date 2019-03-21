@@ -8,7 +8,7 @@
   - [选择器优先级](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/CSS选择器.md)
   - [盒模型](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/盒模型.md)
   - [水平居中](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/水平居中.md)
-  - 垂直居中
+  - [垂直居中](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/垂直居中.md)
   - [BFC](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/BFC.md)
   - [外边距合并](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/外边距合并.md)
   - [层叠上下文](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/层叠上下文.md)
@@ -45,7 +45,7 @@
 * Vue
   - [官方文档链接](https://cn.vuejs.org/)
   - [如何理解"渐进式"](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/Vue渐进式框架的理解.md)
-  - 生命周期
+  - [生命周期](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/生命周期.md)
   - [双向绑定](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/双向绑定.md)
   - 路由
   - vuex

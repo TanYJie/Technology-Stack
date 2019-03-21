@@ -7,7 +7,7 @@
 * CSS
   - [选择器优先级](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/CSS选择器.md)
   - [盒模型](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/盒模型.md)
-  - 水平居中
+  - [水平居中](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/水平居中.md)
   - 垂直居中
   - [BFC](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/BFC.md)
   - [外边距合并](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/外边距合并.md)

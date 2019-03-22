@@ -14,6 +14,7 @@ function TreeNode(x) {
     this.right = null;
 } 
 
+
 /**
  * @description   先序遍历二叉树
  * @param  root   树的根节点
@@ -35,6 +36,58 @@ var preorderTraversal = function(root) {
     }
     return res;
 };
+
+
+/**
+ * @description   中序遍历二叉树
+ * @param  root   树的根节点
+ */
+var inorderTraversal = function(root) {
+    var p = root;
+    var res = [];
+    var stack = [];
+    if(!root){
+        return res;
+    }
+    while(p!=null||stack.length>0){
+        if(p!=null){
+            stack.push(p);
+            p = p.left;
+        }
+        else{
+            p = stack.pop();
+            res.push(p.val);
+            p = p.right;
+        }
+    }
+    return res;
+};
+
+
+/**
+ * @description   后序遍历二叉树
+ * @param  root   树的根节点
+ */
+var postorderTraversal = function(root) {
+    var p = root;
+    var arr = [];
+    var stack = [];
+    if(root == null){
+        return arr;
+    }
+    stack.push(root);
+    while(stack.length>0){
+        var node = stack.pop();
+        arr.unshift(node.val);
+        if(node.left)
+            stack.push(node.left);
+        if(node.right)
+            stack.push(node.right);
+
+    }
+    return arr;
+};
+
 
 /**
  * @description   根据先序遍历和中序遍历重建二叉树
@@ -58,6 +111,28 @@ function reConstructBinaryTree(pre, vin)
     node.right = reConstructBinaryTree(pre.slice(position+1,pre.length),vin.slice(position+1,vin.length));
     return node;
 }
+
+
+/**
+ * @description         根据中序遍历和后序遍历重建二叉树
+ * @param  inorder      树的中序遍历数组
+ * @param  postorder    树的后序遍历数组
+ */
+var buildTree = function(inorder, postorder) {
+    if(inorder.length==0)
+        return null;
+    var value = postorder[postorder.length-1];
+    var node = new TreeNode(value);
+    if(inorder.length==1)
+        return node;
+    var pos = inorder.indexOf(value);
+    if(pos==-1)
+        console.log("数据出错");
+    node.left = arguments.callee(inorder.slice(0,pos),postorder.slice(0,pos));
+    node.right = arguments.callee(inorder.slice(pos+1,inorder.length),postorder.slice(pos,postorder.length-1));
+    return node;
+};
+
 
 /**
  * @description   求数的深度

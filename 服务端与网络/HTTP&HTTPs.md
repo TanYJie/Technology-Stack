@@ -27,3 +27,15 @@ HTTP 有以下安全性问题：
 <div align="center">
 <img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/HTTPs.png"/>
 </div>
+
+
+## HTTP1.1 和 1.0 的区别
+* 缓存处理：在 HTTP1.0 中主要使用 header 里的 If-Modified-Since,Expires 来做为缓存判断的标准，HTTP1.1 则引入了更多的缓存控制策略例如 Entity tag，If-Unmodified-Since, If-Match, If-None-Match 等更多可供选择的缓存头来控制缓存策略。
+
+* 长连接：HTTP 1.1 支持长连接和请求的流水线处理，在一个 TCP 连接上可以传送多个 HTTP 请求和响应，减少了建立和关闭连接的消耗和延迟，在HTTP1.1 中默认开启 Connection： keep-alive，一定程度上弥补了 HTTP1.0 每次请求都要创建连接的缺点。
+
+## HTTP2.0 的特点
+* 新的二进制格式：HTTP/2 采用二进制格式而非文本格式 
+* 多路复用：HTTP/2 是完全多路复用的，而非有序并阻塞的——只需一个 HTTP 连接就可以实现多个请求响应 ： 
+* header 压缩：使用报头压缩，HTTP/2 降低了开销 
+* 服务器推送：HTTP/2 让服务器可以将响应主动"推送"到客户端缓存中

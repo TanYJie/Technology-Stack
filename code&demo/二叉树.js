@@ -15,6 +15,28 @@ function TreeNode(x) {
 } 
 
 /**
+ * @description   先序遍历二叉树
+ * @param  root   树的根节点
+ */
+var preorderTraversal = function(root) {
+    var stack = [];
+    var res = [];
+    if(root==null){
+        return res;
+    }
+    stack.push(root);
+    while(stack.length>0){
+        var node = stack.pop();
+        res.push(node.val);
+        if(node.right)
+            stack.push(node.right);
+        if(node.left)
+            stack.push(node.left);
+    }
+    return res;
+};
+
+/**
  * @description   根据先序遍历和中序遍历重建二叉树
  * @param  pre    树的先序遍历数组
  * @param  vin    树的中序遍历数组

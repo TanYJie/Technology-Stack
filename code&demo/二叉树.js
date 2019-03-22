@@ -135,7 +135,7 @@ var buildTree = function(inorder, postorder) {
 
 
 /**
- * @description   求数的最大深度
+ * @description   求树的最大深度
  * @param  pRoot  树的根节点      
  */
 function TreeDepth(pRoot)
@@ -148,6 +148,38 @@ function TreeDepth(pRoot)
     var right = TreeDepth(pRoot.right);
     return (left>right)?(left+1):(right+1);
 }
+
+
+/**
+ * @description   求树的最小深度
+ * @param  pRoot  树的根节点      
+ * @knowledge     树的层次遍历+判断是否没有子节点
+ */
+var minDepth = function(root) {
+    if(!root)
+        return 0;
+    if(!root.left&&!root.right)
+        return 1;
+    var queue = [];
+    var depth = 1;
+    queue.push(root);
+    while(queue.length>0){
+        var len = queue.length;
+        var count = 0;
+        while(count<len){
+            var node = queue.shift();
+            if(!node.left&&!node.right)
+                return depth;
+            if(node.left)
+                queue.push(node.left)
+            if(node.right)
+                queue.push(node.right)
+            count++;
+        }
+        depth++;
+    }
+};
+
 
 /**
  * @description   求数的右视图

@@ -135,6 +135,23 @@ var buildTree = function(inorder, postorder) {
 
 
 /**
+ * @description         根据前序遍历和后序遍历重建二叉树（输出一个可能的结果）
+ * @param  pre          树的前序遍历数组
+ * @param  post    树的后序遍历数组
+ */
+var constructFromPrePost = function(pre, post) {
+    if(post.length==0){
+        return null;
+    }
+    var position = post.indexOf(pre[1]);
+    var node = new TreeNode(pre[0]);
+    node.left = constructFromPrePost(pre.slice(1,position+2),post.slice(0,position+1));
+    node.right = constructFromPrePost(pre.slice(position+2,pre.length),post.slice(position+1,post.length-1));
+    return node;
+};
+
+
+/**
  * @description   求树的最大深度
  * @param  pRoot  树的根节点      
  */

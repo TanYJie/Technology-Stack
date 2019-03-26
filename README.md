@@ -1,4 +1,4 @@
-# Technology-Stack & Interview-Experience
+# Technology-Stack
 这里是本人用来复习的前端技术栈和整理的一些面经，希望能获得大家的 star ~
 * HTML
   - [HTML 标签总览](http://www.w3school.com.cn/tags/index.asp)
@@ -62,6 +62,10 @@
   - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)
   - 数据树
   - 五大算法
-* [2019 春招](https://github.com/TanYJie/Technology-Stack/blob/master/面经/春招.md)
 * [code & demo](https://github.com/TanYJie/Technology-Stack-Interview-Experience/tree/master/code&demo)
+
+
+# Interview-Experience
+* [2019 春招](https://github.com/TanYJie/Technology-Stack/blob/master/面经/春招.md)
+
   

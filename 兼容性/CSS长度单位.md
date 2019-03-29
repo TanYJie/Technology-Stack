@@ -12,4 +12,11 @@
 <br>
 
 ## em
-em（font size of the element） 是相对于当前元素的字体大小（font-size）属性值计算出来。由于浏览器默认字体大小是 16px，则在默认情况下 1em = 16px。如果当前元素没有设置字体大小就依赖其父元素的大小。如果其父元素的大小也没有显式的font-size，则向上寻找直至找到能进行计算的元素。
+　　em（font size of the element） 是相对于当前元素的字体大小（font-size）属性值计算出来的。由于浏览器默认字体大小是 16px，则在默认情况下 1em = 16px。如果当前元素没有显式地设置 font-size，就依赖其父元素的大小。如果其父元素的大小也没有显式的设置 font-size，则向上寻找直至找到能进行计算的元素。
+
+<br>
+
+## rem
+　　rem（font size of the root element）和 em 有点类似，不过只是相对根元素（`<html>` 元素）进行计算。
+
+

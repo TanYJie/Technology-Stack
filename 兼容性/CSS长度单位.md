@@ -20,3 +20,5 @@
 　　rem（font size of the root element）和 em 有点类似，不过只是相对根元素（`<html>` 元素）进行计算。
 
 
+## 兼容性
+　　除 IE8 以下版本，都兼容 `em` 和 `rem`，所有浏览器都兼容 `px`。

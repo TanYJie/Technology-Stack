@@ -29,6 +29,7 @@
   - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
   - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)
   - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/垃圾回收.md)
+  - 事件循环（ Event Loop ）
 * 浏览器
   - [BOM](https://github.com/TanYJie/Technology-Stack/blob/master/浏览器/BOM.md)
   - [从输入 url 到页面加载完成的全过程](https://www.cnblogs.com/daijinxue/p/6640153.html)
@@ -47,6 +48,7 @@
   - [如何理解"渐进式"](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/Vue渐进式框架的理解.md)
   - [生命周期](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/生命周期.md)
   - [双向绑定](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/双向绑定.md)
+  - Vue 虚拟 DOM & diff 算法
   - 路由
   - vuex
 * 兼容性

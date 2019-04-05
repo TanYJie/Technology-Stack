@@ -33,48 +33,50 @@
     
 # updateChildren 逻辑
 ```javascript
-while(..){
-    if(旧头比新头){
-        // 操作index
-    }
-    if(旧尾比新尾){
-        // 操作index
-    }
-    if(旧头比新尾){
-        patchVnode();
-        // 把旧头移动到旧尾之后
-    }
-    if(新头比旧尾){
-        patchVnode();
-        // 把旧尾移动到旧头之前
-    }
-    else{
-        // 尝试在oldChildren中寻找跟newStartVnode具有相同key的节点
-        if(没找到){
-            // 创建新节点 
+function updateChildren(){
+    while(..){
+        if(旧头比新头){
+            // 操作index
+        }
+        if(旧尾比新尾){
+            // 操作index
+        }
+        if(旧头比新尾){
+            patchVnode();
+            // 把旧头移动到旧尾之后
+        }
+        if(新头比旧尾){
+            patchVnode();
+            // 把旧尾移动到旧头之前
         }
         else{
-            // 找到了，在用sameVnode()函数判断是否是同一节点
-            if(是同一节点){
-                patchVnode();
-                // 标记为已处理
-                // 插入到旧头之前
+            // 尝试在oldChildren中寻找跟newStartVnode具有相同key的节点
+            if(没找到){
+                // 创建新节点 
             }
             else{
-                // 不是同一节点
-                // 当做新节点处理
-                // 创建新节点
+                // 找到了，在用sameVnode()函数判断是否是同一节点
+                if(是同一节点){
+                    patchVnode();
+                    // 标记为已处理
+                    // 插入到旧头之前
+                }
+                else{
+                    // 不是同一节点
+                    // 当做新节点处理
+                    // 创建新节点
+                }
             }
         }
     }
     // 循环结束
     // 如果 oldStart 和 oldEnd 相遇，说明在 newStartIdx 和 newEndIdx 之间的节点都是新节点，直接添加
     if (oldStartIdx > oldEndIdx) {
-      addVnodes(parentElm, refElm, newCh, newStartIdx, newEndIdx, insertedVnodeQueue)
+        addVnodes(parentElm, refElm, newCh, newStartIdx, newEndIdx, insertedVnodeQueue)
     } 
     // 如果 newStart 和 newEnd 相遇，说明在 oldStartIdx 和 oldEndIdx 之间的节点在新 dom 中不存在，直接删除
     else if (newStartIdx > newEndIdx) {
-      removeVnodes(parentElm, oldCh, oldStartIdx, oldEndIdx)
+        removeVnodes(parentElm, oldCh, oldStartIdx, oldEndIdx)
     }
 }
 ```

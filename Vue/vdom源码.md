@@ -437,7 +437,7 @@ function patchVnode (oldVnode, vnode, insertedVnodeQueue, removeOnly) {
       } else if (sameVnode(oldStartVnode, newEndVnode)) { // Vnode moved right
         // patch oldStartVnode和newEndVnode
         patchVnode(oldStartVnode, newEndVnode, insertedVnodeQueue)
-        // 如果removeOnly是false，则将oldStartVnode.eml移动到oldEndVnode.elm之后
+        // 如果removeOnly是false，则将oldStartVnode.elm移动到oldEndVnode.elm之后
         canMove && nodeOps.insertBefore(parentElm, oldStartVnode.elm, nodeOps.nextSibling(oldEndVnode.elm))
         // oldStart索引右移，newEnd索引左移
         oldStartVnode = oldCh[++oldStartIdx]

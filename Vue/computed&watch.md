@@ -32,6 +32,9 @@ var vm = new Vue({
 
 #### computed 实现方式
 　　只需要将 `fullName` 声明为 computed 即可。
+  
+  * 访问 `fullName` 属性时，判断 watcher 对象的 `dirty` 属性，如果 `dirty == false`，直接使用 watcher 对象中的值，即使用了缓存。
+  * 当 `firstName` 和 `lastName` 改变时，将 `dirty` 属性设置为 true，此时再访问 `fullName` 属性，发现 `dirty == true`，则重新计算值。
 ```javascript
 var vm = new Vue({
   el: '#demo',

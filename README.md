@@ -21,10 +21,11 @@
   - 执行环境
   - 作用域与作用域链
   - [基本类型和引用类型的赋值 & 对象的拷贝](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/JavaScript/基本类型和引用类型的赋值&对象的拷贝.md)
-  - 原型与原型链、构造函数
+  - 原型与原型链
   - [instansof 原理](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/instanceof原理.md)
   - [new 运算符的执行过程](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/new运算符的执行过程.md)
   - [继承](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/继承.md)
+  - [遍历对象的方式]
   - [闭包](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/闭包.md)
   - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
   - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)
@@ -57,7 +58,7 @@
   - [响应式布局](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/兼容性/响应式布局.md)
   - [浏览器内核](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/兼容性/浏览器内核.md)
 * 前端性能
-  - JavaScript 性能调优
+  - [JavaScript 性能调优](https://github.com/TanYJie/Technology-Stack/blob/master/前端性能/JavaScript性能调优.md)
   - Vue 性能调优
 * Webpack
   - [官方文档](https://www.webpackjs.com/)

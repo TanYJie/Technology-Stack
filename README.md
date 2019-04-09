@@ -25,7 +25,7 @@
   - [instansof 原理](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/instanceof原理.md)
   - [new 运算符的执行过程](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/new运算符的执行过程.md)
   - [继承](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/继承.md)
-  - [遍历对象的方式]
+  - [遍历对象的方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/遍历对象.md)
   - [闭包](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/闭包.md)
   - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
   - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)

@@ -18,8 +18,7 @@
   - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/script引入方式.md)
   - [操作符 & 类型转换](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/操作符&类型转换.md)
   - [类型判断](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/类型判断.md)
-  - 执行环境
-  - 作用域与作用域链
+  - [执行环境及作用域](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/执行环境及作用域.md)
   - [基本类型和引用类型的赋值 & 对象的拷贝](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/JavaScript/基本类型和引用类型的赋值&对象的拷贝.md)
   - 原型与原型链
   - [instansof 原理](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/instanceof原理.md)

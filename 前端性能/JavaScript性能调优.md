@@ -1,4 +1,8 @@
-# 1.函数防抖与节流
+# JavaScript 脚本篇
+
+<br>
+
+## 1.函数防抖与节流
 　　函数防抖（debounce）是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。多用 `clearTimeout()` 进行重新计算。
 ```javascript
 /**
@@ -54,3 +58,49 @@ function throttle(method, time) {
 }
 ```
 　　函数防抖的关键是 **打断之前的操作**，函数节流的关键是 **等待之前的操作**。
+
+# DOM 优化篇
+## 1.事件委托
+　　在 JavaScript 中，添加到页面上的事件处理程序数量将直接关系到页面的整体运行性能。首先，每个函数都是对象，都会占用内存；其次，必须事先指定所有事件处理程序，造成 DOM 访问次数过多。事实上，利用好事件处理程序还是可以提升性能的。
+
+　　"事件处理程序过多" 问题的解决方案就是 **事件委托**。事件委托利用了事件冒泡，比如一个列表：
+```html
+<ul id="mylink">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ul>
+```
+　　我们只需要在`<ul>`元素上加一个事件处理程序，即可处理多个`<li>`元素的事件。
+
+<br>
+
+## 2.最小化现场更新
+　　如果你要访问的 DOM 是已经显示的页面的一部分，那么你就是在进行一个 **现场更新**。对现场的每一个更改，都会使得浏览器重新计算尺寸进行更新。
+  
+　　为解决这个问题 Javascript 提供了一个文档片段 DocumentFragment 的机制。如果将文档中的节点添加到文档片段中，就会从文档树中移除该节点。把所有要构造的节点都放在文档片段中，这样可以不影响文档树，也就不会造成页面渲染。当节点都构造完成后，再将文档片段对象添加到页面中，这时所有的节点都会一次性渲染出来，这样就能减少浏览器负担，提高页面渲染速度。
+```javascript
+var fragment = document.createDocumentFragment(); // 创建DocumentFragment
+for(var i=0; i<10; i++){
+    fragment.appendChild(item);  // 向DocumentFragment中加入元素
+}
+father.appendChild(fragment);    // 此时DocumentFragment中子节点被添加到目标，片段本身不被添加
+```
+
+<br>
+
+## 3.注意 HTMLCollection
+以下情况会返回 HTMLCollection 对象：
+  * 调用 `getElementByTagName()`
+  * 获取了元素的`childNodes`属性
+  * 获取了元素的`attributes`属性
+  * 访问了特殊的集合，如 document.forms、document.images 等
+　　任何访问 HTMLCollection，都是在文档上进行查询，这个开销很昂贵。所以要最小化访问 HTMLCollection。最重要的地方是循环。
+```javascript
+var images = document.getElementByTagName("img");
+var len;
+for(var i=0, len=images.length; i<len; i++){   // 注意这里要把元素个数的初始化放在for循环中，不能每次访问 images.length
+    var image = images[i];                     // 注意这里把每个img元素保存下来，不能每次访问images[i]
+    // 处理
+}
+```

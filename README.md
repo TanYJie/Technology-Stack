@@ -16,6 +16,7 @@
   - [link 和 @import 区别](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/link和@import区别.md)
 * JavaScript
   - [script 引入方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/script引入方式.md)
+  - [变量提升]
   - [操作符 & 类型转换](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/操作符&类型转换.md)
   - [类型判断](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/类型判断.md)
   - [执行环境及作用域](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/执行环境及作用域.md)
@@ -55,6 +56,7 @@
   * 安全
     - [XSS 攻击](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/安全/XSS攻击.md)
     - [CSRF 攻击](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/安全/CSRF攻击.md)
+    - 前端权限控制
   * 兼容性
     - [CSS 长度单位](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/前端进阶/兼容性/CSS长度单位.md)
     - [响应式布局](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/前端进阶/兼容性/响应式布局.md)
@@ -62,6 +64,7 @@
   * 性能
     - [JavaScript 性能调优](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/前端性能/JavaScript性能调优.md)
     - Vue 性能调优
+    - 首屏性能优化
 * Webpack
   - [官方文档](https://www.webpackjs.com/)
   - [知乎教程](https://zhuanlan.zhihu.com/p/57722935?utm_source=qq&utm_medium=social&utm_oi=910792540654022656)

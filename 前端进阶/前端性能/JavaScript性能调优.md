@@ -46,6 +46,9 @@ function throttle(method, time) {
 ```
 
 ### 定时器版
+* 当定时器不存在，说明可以执行函数，于是定义一个定时器来向任务队列注册目标函数 
+  * 目标函数执行后设置保存定时器 ID 变量为空
+* 当定时器已经被定义，说明已经在等待过程中。则等待下次触发事件时再进行查看。 
 ```javascript
 function throttle(method, time) {
     let id;
@@ -53,14 +56,16 @@ function throttle(method, time) {
         let context = this;
         if (!id) {
             id = setTimeout(() => {
-                id = null;
                 method.apply(context, args);
+                id = null;
             }, time)
         }
     }
 }
 ```
 　　函数防抖的关键是 **打断之前的操作**，函数节流的关键是 **等待之前的操作**。
+
+<br>
 
 # DOM 优化篇
 ## 1.事件委托

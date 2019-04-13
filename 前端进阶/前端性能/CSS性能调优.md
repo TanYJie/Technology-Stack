@@ -2,8 +2,8 @@
 
 本章内容：
 * [提升 CSS 选择器性能](#提升-css-选择器性能)
-* [开启 GPU 加速](合成层和-GPU-加速)
-* 使用 requestAnimationFrame 代替 setInterval 操作
+* [开启 GPU 加速](合成层和-gpu-加速)
+* [使用 requestAnimationFrame 代替 `setTimeout()`/`setInterval()` 操作](requestanimationframe)
 
 <br>
 
@@ -63,6 +63,13 @@
   * 对于 transform 和 opacity 效果，不会触发 layout 和 paint
   
 　　利用合成层对于提升页面性能方面有很大的作用，因此我们也总结了一下几点优化建议。
-  * 提升动画效果的元素：提升合成层的最好方式是使用 CSS 的 will-change 属性。
+  * 提升动画效果的元素：提升合成层的最好方式是使用 CSS 的 will-change 属性。（记得变化完成后移除 will-change）
   * 使用 transform 或者 opacity 来实现动画效果
   * 防止层爆炸：不要创建太多的渲染层。因为每创建一个新的渲染层，就意味着新的内存分配和更复杂的层的管理。
+
+<br>
+
+## requestAnimationFrame
+　　HTML5 提供一个专门用于请求动画的 API，那就是 requestAnimationFrame。在 CSS 变换和动画中，浏览器知道动画什么时候开始，因此会计算出正确的循环间隔，在恰当的时候刷新 UI。而 JavaScript 动画只是简单的用`setTimeout()`/`setInterval()`，这并不是十分精确（仅把动画代码插入到队列中，不代表立即执行）。
+  
+　　因此创造了一个新的方法`requestAnimationFrame()`,其最大的优势是由系统来决定回调函数的执行时机。`requestAnimationFrame()`方法接受一个参数，**即在每次重绘屏幕前调用的一个函数**。

@@ -1,16 +1,54 @@
-# HTML5 的基本特征
+# HTML5 新特性
 
-1、向前兼容性
-　　核心理念——平滑过渡！不支持 HTML5 的浏览器可以向前兼容，并不会影响web内容的显示！
+## 1、简化的 DOCTYPE 声明
+HTML4.01 标准版本的 DOCTYPE 的声明
+```xml
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://ww.w3.org/TR/html4/strict.dtd"> 
+```
+HTML4.01 过渡版本的 DOCTYPE 的声明
+```xml
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://ww.w3.org/TR/html4/loose.dtd"> 
+```
+HTML4.01 基于框架的 HTML 文档版本的 DOCTYPE 的声明
+```xml
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://ww.w3.org/TR/html4/frameset.dtd"> 
+```
+HTML5 中的 DOCTYPE 声明（对字母大小写不敏感）
+```xml
+<!DOCTYPE HTML>
+```
 
-2、跨平台运行性
-　　从 PC 浏览器到手机、平板电脑，甚至是智能电视。只要用户的设备支持 HTML5，基于 HTML5 的 web 程序就可以无障碍的运行！
+## 2、简化的编码字符集
+对于 HTML4.01 标准编码字符集声明
+```html
+<meta http="Content-Type" content="text/html;charset=utf-8">
+```
+HTML5 的编码字符集声明
+```xml
+<meta charset="utf-8">
+```
 
-3、简单易用性
-　　HTML5 更加简单实用。没有 XHTML2.0 那样严格的语法规则。（<HTML5 的属性精简表示方法可以大大提高 html 文本的传输效率！> <HTML5 Web Form提供一套强大的表单验证机制，无需冗长的JS代码验证！>）
+## 3、简化的样式表和脚本引入
+HTML4.01 标准的 html 文档中引入的样式表和脚本文本
+```html
+<link href="test.css" type="text/css" rel="stylesheet"> 
+<script src="test.js" type="text/javascript"></script>
+```
+HTML5 中标准的 html文档引入的样式文本和脚本文本
+```html
+<link href="test.css" rel="stylesheet">
+<script src="test.js"></script>
+```
 
-4、用户友好性
+## 4、新增的语义/结构化标签
+参考 [W3C](http://www.w3school.com.cn/tags/index.asp)
 
-强化web页面的变现性能：Audio、video、canvas 等标签元素的引入；
+## 5、新的图形标签
 
-提高用户体验度：地理位置服务、本地数据存储、文件上传、离线应用等新特性。
+## 6、新的 API
+* HTML Geolocation 地理位置
+* HTML Drag & Drop拖放
+* HTML Local Storage 本地存储
+* HTML Application Cache 应用程序缓存
+* HTML Web Workers web工作者
+* HTNL SSE

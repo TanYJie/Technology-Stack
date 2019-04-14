@@ -2,55 +2,27 @@
 
 　　（文章转自[此处](https://www.freebuf.com/articles/web/185654.html)）
   
-　　Cross-Site Scripting（跨站脚本攻击）简称 XSS，是一种代码注入攻击。攻击者通过在目标网站上注入恶意脚本，使之在用户的浏览器上运行。利用这些恶意脚本，攻击者可获取用户的敏感信息如 Cookie、SessionID 等，进而危害数据安全。
-
-　　为了和 CSS 区分，这里把攻击的第一个字母改成了 X，于是叫做 XSS。
+　　Cross-Site Scripting（跨站脚本攻击）简称 XSS，是一种代码注入攻击。攻击者通过在目标网站上注入恶意脚本，使之在用户的浏览器上运行。利用这些恶意脚本，攻击者可获取用户的敏感信息如 Cookie、SessionID 等，进而危害数据安全。为了和 CSS 区分，这里把攻击的第一个字母改成了 X，于是叫做 XSS。
 
 　　XSS 的本质是：恶意代码未经过滤，与网站正常的代码混在一起；浏览器无法分辨哪些脚本是可信的，导致恶意脚本被执行。
+
+　　XSS 有以下三类：
+  * 反射型 XSS
+  * 持久型 XSS
+  * DOM 型 XSS
   
   <br>
   
-### 一个案例
-　　XSS 攻击是页面被注入了恶意的代码，为了更形象的介绍，我们用发生在小明同学身边的事例来进行说明。某天，公司需要一个搜索页面，根据 URL 参数决定关键词的内容。小明很快把页面写好并且上线。代码如下：
-```html
- <input type = "text" value= "<%= getParameter("keyword") %>">
- <button> 搜索 </button> 
- <div> 
-  您搜索的关键词是： <%= getParameter("keyword") %> 
- </div> 
-```
-　　然而，在上线后不久，小明就接到了安全组发来的一个神秘链接：
+### 反射型 XSS
+　　反射型 XSS 步骤如下：  
+1. 攻击者构造出特殊的 URL，其中包含恶意代码。  
+2. 用户打开带有恶意代码的 URL 时，**后端** 将恶意代码从 URL 中取出，拼接在 HTML 中返回给浏览器。  
+3. 用户浏览器接收到响应后解析执行，混在其中的恶意代码也被执行。
 
-　　`http://xxx/search?keyword="><script>alert('XSS');</script>`
+#### 解决方案一
+　　使用`escapeHTML()`将 url 进行转义，可过滤掉`<script>`标签。
 
-　　小明带着一种不祥的预感点开了这个链接 **[请勿模仿]** 。果然，页面中弹出了写着 "XSS" 的对话框。
-
-　　**可恶，中招了！小明眉头一皱，发现了其中的奥秘：**
-  
-　　当浏览器请求 `http://xxx/search?keyword="><script>alert('XSS');</script>` 时，服务端会解析出请求参数 keyword，得到 `"><script>alert('XSS');</script>`，拼接到 HTML 中返回给浏览器。形成了如下的 HTML：
-```html
- <input type = "text" value = ""><script>alert('XSS');</script>">
- <button> 搜索 </ button > 
- <div> 
-  您搜索的关键词是："><script>alert('XSS');</script> 
- </div> 
-```
-
-　　浏览器无法分辨出 `<script>alert('XSS');</script>` 是恶意代码，因而将其执行。
-
-　　面对这种情况，我们应该如何进行防范呢？
-
-　　其实，这只是浏览器把用户的输入当成了脚本进行了执行。那么只要告诉浏览器这段内容是文本就可以了。
-
-　　聪明的小明很快找到解决方法，把这个漏洞修复：
-```html
- <input type = "text" value = "<%= escapeHTML(getParameter("keyword")) %> ">
- <button> 搜索 </ button > 
- <div> 
-  您搜索的关键词是： <%= escapeHTML(getParameter("keyword")) %> 
- </div> 
-```
-`escapeHTML()` 按照如下规则进行转义：
+　　`escapeHTML()` 按照如下规则进行转义： 
 
 |字符|转义后的字符| 
 |-|-| 
@@ -61,5 +33,23 @@
 |'|\&#x27;| 
 |/|\&#x2F;|
 
-　　恶意代码都被转义，不再被浏览器执行，而且搜索词能够完美的在页面显示出来。
+#### 解决方案二  
+　　方案一解决了`<script>`标签的问题，但`javascript:`这样的字符串如果出现在特定的位置也会引发 XSS 攻击。比如：
+ * 正常版：`http://xxx/?redirect_to=javascript:alert('XSS')`
+ * 大小写版：`http://xxx/?redirect_to=jAvascRipt:alert('XSS')`
+ * 开头带空格版：`http://xxx/?redirect_to=%20javascript:alert('XSS')`
+　　因此对于链接跳转，如 `<a href="xxx">` 或 `location.href="xxx"`，要检验其内容，禁止以 `javascript:` 开头的链接，和其他非法的 scheme。
+  
+#### 总结
+　　防御 XSS 攻击，要做正确的转义，同时要注意：
+* HTML 转义是非常复杂的，在不同的情况下要采用不同的转义规则。如果采用了错误的转义规则，很有可能会埋下 XSS 隐患。
+* 尽量避免自己写转义库，而应当采用成熟的、业界通用的转义库。
+
+
+## XSS 注入的方法
+  * 在 HTML 中内嵌的文本中，恶意内容以 `<script>` 标签形成注入。
+  * 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。
+  * 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。
+  * 在标签的 href、src 等属性中，包含 `javascript:` 等可执行代码。
+  * 在 onload、onerror、onclick 等事件中，注入不受控制代码。
 

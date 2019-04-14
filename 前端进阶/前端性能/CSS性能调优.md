@@ -2,7 +2,7 @@
 
 本章内容：
 * [提升 CSS 选择器性能](#提升-css-选择器性能)
-* [开启 GPU 加速](合成层和-gpu-加速)
+* [开启 GPU 加速](#合成层和-gpu-加速)
 * [使用 requestAnimationFrame 代替 `setTimeout()`/`setInterval()` 操作](#requestanimationframe)
 
 <br>

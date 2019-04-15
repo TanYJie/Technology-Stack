@@ -70,11 +70,11 @@ function updateChildren(){
         }
     }
     // 循环结束
-    // 如果 oldStart 和 oldEnd 相遇，说明在 newStartIdx 和 newEndIdx 之间的节点都是新节点，直接添加
+    // 如果 oldStart > oldEnd ，说明在 newStartIdx 和 newEndIdx 之间的节点都是新节点，直接添加
     if (oldStartIdx > oldEndIdx) {
         addVnodes(parentElm, refElm, newCh, newStartIdx, newEndIdx, insertedVnodeQueue)
     } 
-    // 如果 newStart 和 newEnd 相遇，说明在 oldStartIdx 和 oldEndIdx 之间的节点在新 dom 中不存在，直接删除
+    // 如果 newStart > newEnd ，说明在 oldStartIdx 和 oldEndIdx 之间的节点在新 dom 中不存在，直接删除
     else if (newStartIdx > newEndIdx) {
         removeVnodes(parentElm, oldCh, oldStartIdx, oldEndIdx)
     }

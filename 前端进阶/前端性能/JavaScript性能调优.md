@@ -136,6 +136,15 @@ for(var i=0; i<10; i++){
 father.appendChild(fragment);    // 此时DocumentFragment中子节点被添加到目标，片段本身不被添加
 ```
 
+　　或者还有以下方式优化多次重排（reflow）造成的性能问题：
+* 不要一条一条地修改 DOM 的样式。与其这样，还不如预先定义好 CSS 的 class，然后修改 DOM 的 className。
+* 不要把 DOM 节点的属性值放在一个循环里当成循环里的变量。不然这会导致大量地读写这个结点的属性。
+* 把 DOM 离线后修改。如：
+  - 使用 documentFragment 对象在内存里操作 DOM。
+  - 先把 DOM 给 `display:none`，然后再修改，然后再把它显示出来。
+  - clone 一个 DOM 节点到内存里，然后再修改，改完后，和在线的那个的交换一下。
+* 为动画的 HTML 元件设置 `position: fixed` 或 `position: absolute` ，让其脱离文档流，不影响父级；
+
 <br>
 
 ## 3.注意 HTMLCollection

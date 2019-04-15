@@ -34,4 +34,4 @@ console.log(myInstanceof(person1,Person)); //true
 console.log(myInstanceof(person1,Object)); //true
 
 ```
-　　要注意的是，像 myInstanceof(arr,Array) 中的 Array，myInstanceof(arr,Object) 中的 Object 代表的都是 **构造函数**，可以去掉代码中的注释发现 typeof Object 为 function，因此判断时用的是 category.prototype 而不是 category
+　　要注意的是，像 `myInstanceof(arr,Array)` 中的 Array，`myInstanceof(arr,Object)` 中的 Object 代表的都是 **构造函数**，可以去掉代码中的注释发现 typeof Object 为 function，因此判断时用的是 category.prototype 而不是 category

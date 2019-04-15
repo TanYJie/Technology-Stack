@@ -70,4 +70,8 @@ location.replace("http://www.wrox.com");   //若如此做，用户不能回到�
   * `description`：插件描述
   * `filename`：插件文件名
   * `length`：插件所处理的 MIME 类型数量
+    
+  <br>
   
+# screen 对象
+# history 对象

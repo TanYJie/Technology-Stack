@@ -5,9 +5,10 @@
   
 # window 对象
 　　BOM 的核心对象是 window，它表示浏览器的一个实例。它同时扮演着 ECMAScript 中 Global 对象的角色，所有在全局作用域中声明的变量、函数都会变成 window 对象的属性和方法。
+  
 　　注意一点，使用`var`定义变量与在 window 对象上直接定义属性有一点差别：
   
-```
+```javascript
 var age = 29;
 window.color = "red";
 

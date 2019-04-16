@@ -65,6 +65,7 @@
     - [JavaScript 性能调优](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/前端性能/JavaScript性能调优.md)
     - Vue 性能调优
     - [首屏性能优化](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/前端性能/首屏性能调优.md)
+  * 设计模式
 * Webpack
   - [官方文档](https://www.webpackjs.com/)
   - [知乎教程](https://zhuanlan.zhihu.com/p/57722935?utm_source=qq&utm_medium=social&utm_oi=910792540654022656)
@@ -73,6 +74,7 @@
   - Node 的模块实现
   - 包和 NPM
   - [AMD 和 CMD](https://github.com/TanYJie/Technology-Stack/blob/master/Node/AMD和CMD.md)
+  - Node 事件循环
 * 数据结构和算法
   - [排序算法](https://github.com/TanYJie/Technology-Stack/blob/master/数据结构和算法/排序算法.md)
   - 数据树

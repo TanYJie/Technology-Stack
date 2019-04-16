@@ -65,7 +65,10 @@
     - [JavaScript 性能调优](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/前端性能/JavaScript性能调优.md)
     - Vue 性能调优
     - [首屏性能优化](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/前端性能/首屏性能调优.md)
-  * 设计模式
+  * 设计模式（部分）
+    - 创建型设计模式（单例模式、工厂模式、原型模式）
+    - 结构型设计模式（适配器模式、桥接模式、组合模式、装饰模式、享元模式、代理模式）
+    - 行为型设计模式（观察者模式、状态模式、发布者-订阅者模式）
 * Webpack
   - [官方文档](https://www.webpackjs.com/)
   - [知乎教程](https://zhuanlan.zhihu.com/p/57722935?utm_source=qq&utm_medium=social&utm_oi=910792540654022656)

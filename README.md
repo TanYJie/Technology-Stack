@@ -64,7 +64,7 @@
   * 性能
     - [CSS 性能调优](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/前端性能/CSS性能调优.md)
     - [JavaScript 性能调优](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/前端性能/JavaScript性能调优.md)
-    - Vue 性能调优
+    - [Vue 性能调优](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/前端性能/Vue性能调优.md)
     - [首屏性能优化](https://github.com/TanYJie/Technology-Stack/blob/master/前端进阶/前端性能/首屏性能调优.md)
   * 设计模式（部分）
     - 创建型设计模式（单例模式、工厂模式、原型模式）

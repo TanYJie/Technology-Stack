@@ -35,5 +35,7 @@
 ## SEO
 　　SEO（Search Engine Optimization），中文一般译作：搜索引擎优化。SEO 是通过了解搜索引擎的运作规则（如何抓取网站页面，如何索引以及如何根据特定的关键字展现搜索结果排序等）来调整网站，以提高该网站在搜索引擎中某些关键词的搜索结果排名。如 `<meta>` 标签的 description、keywords。
 
-　　前面我们谈到 SPA 不利于 SEO，是因为就目前而言，部分搜索引擎如 Google、bing 等，它们的爬虫虽然已经支持执行 JavaScript 甚至是通过 Ajax 获取数据了，但是对于异步数据的支持也还不足，Vue SSR中是这样说的
+　　前面我们谈到 SPA 不利于 SEO，是因为就目前而言，部分搜索引擎如 Google、bing 等，它们的爬虫虽然已经支持执行 JavaScript 甚至是通过 Ajax 获取数据了，但是对于异步数据的支持也还不足，[Vue SSR](https://ssr.vuejs.org/zh/) 中是这样说的：
 >如果你的应用程序初始展示 loading 菊花图，然后通过 Ajax 获取内容，抓取工具并不会等待异步完成后再行抓取页面内容。
+
+　　SPA 应用中，通常通过 Ajax 获取数据，而这里就难以保证我们的页面能被搜索引擎爬虫到。并且有一些搜索引擎不支持执行 JavaScript 和通过 Ajax 获取数据，那就更不用提 SEO 了。

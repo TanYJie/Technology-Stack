@@ -1,5 +1,6 @@
 # HTML5 新特性
 
+
 ## 1、简化的 DOCTYPE 声明
 HTML4.01 标准版本的 DOCTYPE 的声明
 ```xml
@@ -47,8 +48,8 @@ HTML5 中标准的 html文档引入的样式文本和脚本文本
 
 ## 6、新的 API
 * HTML Geolocation 地理位置
-* HTML Drag & Drop拖放
+* HTML Drag & Drop 拖放
 * HTML Local Storage 本地存储
 * HTML Application Cache 应用程序缓存
-* HTML Web Workers web工作者
+* HTML Web Workers web 工作者
 * HTNL SSE

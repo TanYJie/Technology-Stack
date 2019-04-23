@@ -3,7 +3,7 @@
 * HTML
   - [HTML 标签总览](http://www.w3school.com.cn/tags/index.asp)
   - [块级元素 & 行内元素 & 行块级元素](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/HTML/块级元素&行内元素&行块级元素.md)
-  - [HTML5 新特性 & 新功能](https://www.cnblogs.com/zxjwlh/p/4460330.html)
+  - [HTML5 新特性 & 新功能](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/HTML/HTML5新特性.md)
 * CSS
   - [选择器优先级](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/CSS选择器.md)
   - [盒模型](https://github.com/TanYJie/Technology-Stack/blob/master/CSS/盒模型.md)

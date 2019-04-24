@@ -2,8 +2,11 @@
 
 　　Web Socket 是一种协议，与 HTTP 协议一样位于应用层，都是 TCP/IP 协议的子集。WebSocket 协议的目标是**在一个独立的持久连接上提供全双工双向通信**。客户端和服务器可以向对方主动发送和接受数据。
   
-* Web Socket 特点
-* Web Socket 建立过程
+* [Web Socket 特点](#web-socket-特点)
+* [Web Socket 建立过程](#web-socket-建立过程)
+* [Web Socket API](#web-socket-api)
+
+<br>
 
 ## Web Socket 特点
 * 使用了自定义的协议，`http://` 对应 `ws://`，`https://` 对应 `wss://`

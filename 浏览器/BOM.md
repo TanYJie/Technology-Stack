@@ -1,5 +1,10 @@
 # BOM 
-　　BOM （浏览器对象模型）提供了很多对象，用于访问浏览器的功能。多年来，缺少事实上的规范导致 BOM 既有意思又有问题。
+　　BOM （浏览器对象模型）提供了很多对象，用于访问浏览器的功能。多年来，缺少事实上的规范导致 BOM 既有意思又有问题。本文中介绍以下几个对象：
+  * [window 对象](#window-对象)
+  * [location 对象](#location-对象)
+  * [navigator 对象](#navigator-对象)
+  * screen 对象
+  * history 对象
   
   <br>
   

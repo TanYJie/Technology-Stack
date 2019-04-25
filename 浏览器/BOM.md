@@ -3,8 +3,8 @@
   * [window 对象](#window-对象)
   * [location 对象](#location-对象)
   * [navigator 对象](#navigator-对象)
-  * screen 对象
-  * history 对象
+  * [screen 对象](#screen-对象)
+  * [history 对象](#history-对象)
   
   <br>
   
@@ -80,3 +80,4 @@ location.replace("http://www.wrox.com");   //若如此做，用户不能回到�
   
 # screen 对象
 # history 对象
+　　history 对象保存着**用户上网的历史记录**，出于安全考虑，开发人员无法得知用户浏览过的 URL，history 对象有 `go()`、`back()`、`forward()`方法模拟浏览器的 "后退" 和 "前进"。history 对象被使用的不多，直到 HTML5

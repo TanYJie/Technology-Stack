@@ -49,7 +49,7 @@
   - [如何理解"渐进式"](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/Vue渐进式框架的理解.md)
   - [生命周期](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/生命周期.md)
   - [双向绑定](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/双向绑定.md)
-  - [Vue SPA 原理]
+  - [SPA 原理](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/SPA.md)
   - [Vue 虚拟 DOM & diff 算法](https://github.com/TanYJie/Technology-Stack/blob/master/Vue/虚拟dom&diff算法.md)
   - [计算属性和侦听器](https://github.com/TanYJie/Technology-Stack/blob/master/Vue/computed&watch.md)
   - 路由

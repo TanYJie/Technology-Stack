@@ -2,8 +2,8 @@
 　　单页 Web 应用（single page web application，SPA），就是只有一张 Web 页面的应用，是加载单个 HTML 页面并在用户与应用程序交互时动态更新该页面的 Web应用程序。
 
 　　通常 SPA 中前端路由有 2 种实现方式：
-* [`window.history`](#window.history)
-* [`location.hash`]
+* [`window.history`](#windowhistory)
+* [`location.hash`](#locationhash)
 
 # window.history
 　　history 对象保存着**用户上网的历史记录**，出于安全考虑，开发人员无法得知用户浏览过的 URL，history 对象有 `go()`、`back()`、`forward()`方法模拟浏览器的 "后退" 和 "前进"。
@@ -31,3 +31,45 @@
 * 需要注意的是调用 `pushState()` 或 `replaceState()` 不会触发 popstate 事件。只有在做出浏览器动作时，或者在 Javascript 代码中调用 `go()`、`back()`、`forward()`，才会触发该事件。
 
 * 使用的时候，可以为 popstate 事件指定回调函数。这个回调函数的参数是一个 event 事件对象，它的 state 属性指向 `pushState()` 和 `replaceState()` 方法为当前 URL 所提供的状态对象（即这两个方法的第一个参数）。
+
+<br>
+
+# location.hash
+### 一、# 的含义
+　　# 代表网页中的一个位置。如：http://localhost：8080/cbuild/index.html#one 就代表网页 index.html 的 one 位置。浏览器读取这个 URL 后，会自动将 one 位置滚动至可视区域。
+
+　　为网页制定标识符：
+ * 使用锚点，比如`<a name="print"></a>`
+ * 使用 id 属性，比如`<div id="print"></div>`
+
+### 二、HTTP 请求不包括 #
+　　比如： http://localhost：8081/cbuild/index.html#first 浏览器实际发出的请求是这样的，不包含 #first
+```http
+GET /index.html  
+```
+
+### 三、# 后的字符
+　　在第一个 # 后面出现的任何字符，都会被浏览器解读为位置标识符。这意味着，这些字符都不会被发送到服务器端。
+
+　　比如，下面URL的原意是指定一个颜色值：http://www.example.com/?color=#fff
+
+　　但是，浏览器实际发出的请求是：
+```http
+GET /?color=
+Host: www.example.com
+```
+　　可以看到，#fff 被省略了，只有将 # 转码为 %23，浏览器才会将其作为实义字符处理。也就是说，上面的网址应该被写成：http://www.example.com/?color=%23fff
+
+### 四、改变 # 不触发网页重载
+　　单单改变 # 后的部分，浏览器只会滚动到相应位置，不会重新加载网页。
+
+
+### 五、改变 # 会改变浏览器的访问历史
+　　每一次改变 # 后的部分，都会在浏览器的访问历史中增加一个记录，使用"后退"按钮，就可以回到上一个位置。
+
+
+### 六、window.location.hash 读取 # 值
+　　window.location.hash 这个属性可读可写。读取时，可以用来判断网页状态是否改变；写入时，则会在不重载网页的前提下，创造一条访问历史记录。
+
+### 七、onhashchange 事件
+　　这是一个 HTML5 新增的事件，当 # 值发生变化时，就会触发这个事件。

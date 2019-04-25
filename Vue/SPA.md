@@ -1,10 +1,11 @@
-# SPA
-　　单页Web应用（single page web application，SPA），就是只有一张Web页面的应用，是加载单个HTML 页面并在用户与应用程序交互时动态更新该页面的Web应用程序。
-通常 SPA 中前端路由有2种实现方式：
+# SPA 及其实现原理
+　　单页 Web 应用（single page web application，SPA），就是只有一张 Web 页面的应用，是加载单个 HTML 页面并在用户与应用程序交互时动态更新该页面的 Web应用程序。
 
-window.history
-location.hash
-# history 对象
+　　通常 SPA 中前端路由有 2 种实现方式：
+* [`window.history`](#window.history)
+* [`location.hash`]
+
+# window.history
 　　history 对象保存着**用户上网的历史记录**，出于安全考虑，开发人员无法得知用户浏览过的 URL，history 对象有 `go()`、`back()`、`forward()`方法模拟浏览器的 "后退" 和 "前进"。
 
 * `history.back()`：与在浏览器点击后退按钮相同

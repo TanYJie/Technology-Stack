@@ -71,12 +71,13 @@ var inorderTraversal = function(root) {
  * @param  root   树的根节点
  */
 var postorderTraversal = function(root) {
+    if(root == null){
+        return [];
+    }
+	
     var p = root;
     var arr = [];
     var stack = [];
-    if(root == null){
-        return arr;
-    }
     stack.push(root);
     while(stack.length>0){
         var node = stack.pop();
@@ -139,7 +140,7 @@ var buildTree = function(inorder, postorder) {
 /**
  * @description         根据前序遍历和后序遍历重建二叉树（输出一个可能的结果）
  * @param  pre          树的前序遍历数组
- * @param  post    树的后序遍历数组
+ * @param  post    	树的后序遍历数组
  */
 var constructFromPrePost = function(pre, post) {
     if(post.length==0){
@@ -154,8 +155,8 @@ var constructFromPrePost = function(pre, post) {
 
 
 /**
- * @description   求树的最大深度
- * @param  pRoot  树的根节点      
+ * @description   	求树的最大深度
+ * @param  pRoot  	树的根节点      
  */
 function TreeDepth(pRoot)
 {
@@ -170,9 +171,9 @@ function TreeDepth(pRoot)
 
 
 /**
- * @description   求树的最小深度
- * @param  pRoot  树的根节点      
- * @knowledge     树的层次遍历+判断是否没有子节点
+ * @description   	求树的最小深度
+ * @param  pRoot  	树的根节点      
+ * @knowledge     	树的层次遍历+判断是否没有子节点
  */
 var minDepth = function(root) {
     if(!root)
@@ -201,9 +202,9 @@ var minDepth = function(root) {
 
 
 /**
- * @description   求数的右视图
- * @param  root   树的根节点 
- * @knowledge     树的层次遍历+判断是否是最后一个节点
+ * @description   	求数的右视图
+ * @param  root   	树的根节点 
+ * @knowledge     	树的层次遍历+判断是否是最后一个节点
  */
 var rightSideView = function(root) {
     var queue = [];

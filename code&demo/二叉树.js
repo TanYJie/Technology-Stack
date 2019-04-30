@@ -20,11 +20,11 @@ function TreeNode(x) {
  * @param  root   树的根节点
  */
 var preorderTraversal = function(root) {
+    if(root == null){
+        return [];
+    }
     var stack = [];
     var res = [];
-    if(root==null){
-        return res;
-    }
     stack.push(root);
     while(stack.length>0){
         var node = stack.pop();
@@ -43,12 +43,14 @@ var preorderTraversal = function(root) {
  * @param  root   树的根节点
  */
 var inorderTraversal = function(root) {
+    if(root == null){
+        return [];
+    }
+	
     var p = root;
     var res = [];
     var stack = [];
-    if(!root){
-        return res;
-    }
+    
     while(p!=null||stack.length>0){
         if(p!=null){
             stack.push(p);

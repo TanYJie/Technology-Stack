@@ -36,7 +36,7 @@ debounce: function(method,context,time){
     let id;
     return function(...args){
         clearTimeout(id);
-        method.tId = setTimeout(() => {
+        id = setTimeout(() => {
             method.apply(context,args);
         },time);
     };

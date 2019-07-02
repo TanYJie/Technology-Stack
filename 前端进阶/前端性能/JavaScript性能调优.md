@@ -1,5 +1,7 @@
 # JavaScript 性能调优
 
+2019 年 JavaScript 性能优化解析 https://mp.weixin.qq.com/s/IbjY4HLDiUZGz5tAhqeaIw
+
 本章内容：
 * JavaScipt 脚本篇
   * [减少作用域链查找](#1减少作用域链查找)

@@ -45,6 +45,7 @@ HTML5 中标准的 html文档引入的样式文本和脚本文本
 参考 [W3C](http://www.w3school.com.cn/tags/index.asp)
 
 ## 5、新的图形标签
+<svg> 与 <canvas>
 
 ## 6、新的 API
 * HTML Geolocation 地理位置

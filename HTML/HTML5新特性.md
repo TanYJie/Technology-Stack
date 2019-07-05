@@ -45,7 +45,9 @@ HTML5 中标准的 html文档引入的样式文本和脚本文本
 参考 [W3C](http://www.w3school.com.cn/tags/index.asp)
 
 ## 5、新的图形标签
-<svg> 与 <canvas>
+`<svg>` 与 `<canvas>`
+
+SVG 是一种基于 XML 语法的图像格式，全称是可缩放矢量图（Scalable Vector Graphics）。其他图像格式都是基于像素处理的，SVG 则是属于对图像的形状描述，所以它本质上是文本文件，体积较小，且不管放大多少倍都不会失真。
 
 ## 6、新的 API
 * HTML Geolocation 地理位置

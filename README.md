@@ -27,7 +27,6 @@
   - [遍历对象的方式](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/遍历对象.md)
   - [闭包](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/闭包.md)
   - [数组和数组方法](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/数组和数组方法.md)
-  - [内存泄漏](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/内存泄漏.md)
   - [垃圾回收](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/垃圾回收.md)
   - [事件循环（ Event Loop ）](https://github.com/TanYJie/Technology-Stack/blob/master/JavaScript/事件循环.md)
 * 浏览器

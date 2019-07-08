@@ -48,4 +48,4 @@
 ### 关闭的回调函数 close callbacks
 　　close callbacks 阶段执行 close 事件
   
-注：上面介绍的都是 macrotask 的执行情况，microtask 会在以上每个阶段完成后立即执行。
+**注：上面介绍的都是 macrotask 的执行情况，microtask 会在以上每个阶段完成后立即执行。**

@@ -23,6 +23,9 @@
 ### 挂起的回调函数 pending callbacks
 　　此阶段对某些系统操作（如 TCP 错误类型）执行回调。例如，如果 TCP 套接字在尝试连接时接收到 ECONNREFUSED，则某些 \*nix 的系统希望等待报告错误。这将被排队以在 挂起的回调 阶段执行。
   
+### idle, prepare 观察者
+　　`process.nextTick()`属于 idle 观察者，在此处执行。
+
 ### 轮询阶段 poll
 　　轮询 阶段有两个重要的功能：
 

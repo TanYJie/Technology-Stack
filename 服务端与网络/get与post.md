@@ -18,7 +18,7 @@
 
 <br>
 
-### POST 方法会产生两个TCP数据包？
+### POST 方法会产生两个 TCP 数据包？
 　　有些文章中提到，post 会将 header 和 body 分开发送，先发送 header，服务端返回 100 状态码再发送 body。
   
 　　HTTP 协议中没有明确说明 post 会产生两个 TCP 数据包，而且实际测试发现，header 和 body 不一定会分开发送。**所以，header 和 body 分开发送是部分浏览器或框架的请求方法，不属于 post 必然行为**。

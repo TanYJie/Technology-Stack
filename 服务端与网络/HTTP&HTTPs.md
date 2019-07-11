@@ -60,7 +60,15 @@ HTTP/2 的多路复用就是为了解决上述的两个性能问题，我们来�
 
 * 解决第一个：在 HTTP1.1 的协议中，我们传输的 request 和 response 都是基本于文本的，这样就会引发一个问题：所有的数据必须按顺序传输，比如需要传输：hello world，只能从 h 到 d 一个一个的传输，不能并行传输，因为接收端并不知道这些字符的顺序，所以并行传输在 HTTP1.1 是不能实现的。
 
+<div align="center">
+<img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/HTTP多路复用-1.png"/>
+</div>
+
 HTTP/2 引入二进制数据帧和流的概念，其中帧对数据进行顺序标识，如下图所示，这样浏览器收到数据之后，就可以按照序列对数据进行合并，而不会出现合并后数据错乱的情况。同样是因为有了序列，服务器就可以并行的传输数据，这就是流所做的事情。
+
+<div align="center">
+<img src="https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/服务端与网络/image/HTTP多路复用-2.png"/>
+</div>
 
 * 解决第二个问题：HTTP/2 对同一域名下所有请求都是基于流，也就是说同一域名不管访问多少文件，也只建立一路连接。同样 Apache 的最大连接数为 300，因为有了这个新特性，最大的并发就可以提升到 300，比原来提升了 6 倍！
 

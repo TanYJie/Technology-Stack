@@ -21,7 +21,28 @@
 
 <br>
 
+## 百分比
+　　百分比的计算值通常是以 **元素的包含块为对象** 进行计算，包含块不一定是其父元素。一个元素的包含块受其 position 属性值的影响：
 
+1. static 或 relative：父元素的 content-box区域；或者最近的建立格式上下文的祖先元素，比如：table 容器，flex 容器。
+
+2. absolute：最近的非 static 祖先元素的 padding-box 区域。
+
+3. fixed：可视窗口 viewport 本身。
+
+属性	百分比参照对象
+
+| 属性 | 百分比参照对象 |
+| --- | --- |
+| width | 包含块的**宽度** |
+| height | 包含块的**高度** |
+| padding | 包含块的**宽度** |
+| margin | 包含块的**宽度** |
+| top| 包含块的**高度** |
+| right	| 包含块的**宽度** |
+| bottom | 包含块的**高度** |
+| left | 包含块的**宽度** |
+| font-size	| 父元素的 font-size 值 |
 
 
 

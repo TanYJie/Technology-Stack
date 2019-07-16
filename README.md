@@ -91,5 +91,5 @@
 # Interview-Experience
 * [2019 春招](https://github.com/TanYJie/Technology-Stack/blob/master/面经/2019年3月春招.md)
 * [2019 暑期实习记录](https://github.com/TanYJie/Technology-Stack/blob/master/面经/2019暑期实习记录.md)
-  
 * [2019 秋招](https://github.com/TanYJie/Technology-Stack/blob/master/面经/2019年7月秋招.md)
+* [实习中学到的一些东西](https://github.com/TanYJie/Technology-Stack/tree/master/面经/实习学习文档)

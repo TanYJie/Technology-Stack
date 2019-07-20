@@ -4,6 +4,7 @@
 ![](image/react-lifecycle-1.png)
 
 
+<br>
 
 ## 一、组件的实现与挂载
 
@@ -24,8 +25,13 @@ class A extends Component {
 }
 ```
 
+<br>
+
 #### React.js
 ![](image/react.png)
+
+
+<br>
 
 #### ReactComponent.js
 ```javascript
@@ -45,13 +51,14 @@ ReactComponent.prototype.forceUpdate = function ( callback ) {
 };
 ```
 
-
+<br>
 
 #### 回看思维导图
 
 ![](image/reactComponent-思维导图.png)
 
 
+<br>
 
 ## 2.组件的初始化
 
@@ -111,6 +118,9 @@ ReactElement.createElement = function(type, config, children) {
 }
 ```
 
+
+<br>
+
 #### 虚拟 DOM
 
 　　为什么创建的是一个 JavaScript 对象，而不直接创建真实的 DOM？
@@ -122,6 +132,7 @@ ReactElement.createElement = function(type, config, children) {
 　　在频繁修改 DOM 的情况下保证了高效，可以看作是 JavaScript 和浏览器 DOM 间的缓存。
 
 
+<br>
 
 ## 3.组件的挂载
 
@@ -230,7 +241,7 @@ mountComponent(){
 
 ```
 
-
+<br>
 
 ## 回看思维导图
 
@@ -238,6 +249,7 @@ mountComponent(){
 
 
 
+<br>
 
 
  ##  二、组件状态的更新
@@ -264,7 +276,8 @@ ReactComponent.prototype.forceUpdate = function ( callback ) {
 
 ![](./image/setstate.jpg)
 
-  
+
+<br>
 
 ## 三、React 事件系统
 
@@ -277,6 +290,7 @@ ReactComponent.prototype.forceUpdate = function ( callback ) {
 ​	从兼容来说，对于不同的浏览器，React 帮我们统一了事件，做了浏览器的兼容。
 
 
+<br>
 
 #### 事件注册
 
@@ -294,7 +308,7 @@ render() {
 
 ![](./image/eventRegister.jpg)	
 
-
+<br>
 
 #### 事件存储
 
@@ -314,7 +328,7 @@ putListener: function(inst, registrationName, listener) {
 
 ```
 
-
+<br>
 
 #### 事件触发
 
@@ -326,7 +340,7 @@ putListener: function(inst, registrationName, listener) {
 
 ​	从上面的事件分发中可见，React 自身实现了一套冒泡机制。从触发事件的对象开始，向父元素回溯，依次调用它们注册的事件 callback。
 
- 
+<br>
 
 #### 构造合成事件
 
@@ -345,10 +359,7 @@ putListener: function(inst, registrationName, listener) {
 #### 最后进行事件处理
 
 
-
-
-
-
+<br>
 
 # React 性能优化
 

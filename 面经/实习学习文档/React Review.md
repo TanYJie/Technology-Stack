@@ -342,7 +342,7 @@ putListener: function(inst, registrationName, listener) {
 
 
 
-#### 最后：事件处理
+#### 最后进行事件处理
 
 
 
@@ -389,7 +389,7 @@ shouldComponentUpdate(nextProps, nextState) {
 
 3. 箭头函数
 
-4. ```jsx
+   ```jsx
    <button onClick={(param) => this.handleEdit(param)}>编辑</button>
    ```
 
@@ -401,56 +401,5 @@ shouldComponentUpdate(nextProps, nextState) {
 
 
 
-### 好物排行榜中的一个例子
-
-![](./image/honor-list.png)
-
-```javascript
-export default class Tab extends React.PureComponent {
-    
-    //..
-    
-}
-```
-
-```jsx
-// mgj-live-goods-honor-list/content/index.jsx
-export default class Content extends React.Component {
-    
-    //...
-    
-    changeTab(){
-        //...
-    }
-    
-    render(){
-        return (
-            <div>
-                <Tab 
-                    tabName={ item } 
-                  	tabIndex={ index } 
-                   	chooseTab={ chosenTab }
-                   	changeTab={ this.changeTab.bind(this) }
-                </Tab>
-            </div>
-        )
-	}
-}
-
-```
-
-
-
-
-
 ## 三、通过指定 key 提高列表渲染效率
 
-直播后台的列表：
-
-![](./image/lvadmin.png)
-
-
-
-　　目前都是使用数组的 index 作为 key，这样在数组添加或删除项时整个列表都要重新渲染（虽然一般做法是重新请求服务器拿数据）
-
-![](./image/useIndex.png)

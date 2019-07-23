@@ -47,7 +47,6 @@
   - [操作系统](https://github.com/TanYJie/Technology-Stack/blob/master/服务端与网络/操作系统.md)
 * Vue
   - [官方文档链接](https://cn.vuejs.org/)
-  - [如何理解"渐进式"](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/Vue渐进式框架的理解.md)
   - [生命周期](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/生命周期.md)
   - [双向绑定](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/双向绑定.md)
   - [SPA 原理](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/Vue/SPA.md)

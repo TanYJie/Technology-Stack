@@ -4,6 +4,10 @@
   * [HTTP 请求报文](#http-请求报文)
   * [HTTP 响应报文](#http-响应报文)
   * [HTTP 版本](#http-版本迭代)
+    * [HTTP 0.9](#一http09)
+    * [HTTP 1.0](#二http10)
+    * [HTTP 1.1](#三http11)
+    * [HTTP 2.0](#四http20)
   * [HTTP 方法](#http-请求方法)
   * [HTTPS](#https)
 

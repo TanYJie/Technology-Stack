@@ -127,3 +127,6 @@ HTTP 有以下安全性问题：
 
 <br>
 <br>
+
+### 参考文献
+ * [HTTP 0.9 - HTTP 2.0 发展史](http://www.ruanyifeng.com/blog/2016/08/http.html)

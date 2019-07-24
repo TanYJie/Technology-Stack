@@ -7,7 +7,7 @@
     * [HTTP 0.9](#一http09)
     * [HTTP 1.0](#二http10)
     * [HTTP 1.1](#三http11)
-    * [HTTP 2.0](#四http20)
+    * [HTTP 2.0](#四http2)
   * [HTTP 方法](#http-请求方法)
   * [HTTPS](#https)
 

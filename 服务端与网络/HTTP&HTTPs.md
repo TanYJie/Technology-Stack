@@ -7,7 +7,7 @@
     * [HTTP 0.9](#一http09)
     * [HTTP 1.0](#二http10)
     * [HTTP 1.1](#三http11)
-    * [HTTP 2.0](#四http2)
+    * [HTTP 2](#四http2)
   * [HTTP 方法](#http-请求方法)
   * [HTTPS](#https)
 
@@ -329,4 +329,4 @@ HTTP 有以下安全性问题：
 <br>
 
 ### 参考文献
- * [HTTP 0.9 - HTTP 2.0 发展史](http://www.ruanyifeng.com/blog/2016/08/http.html)
+ * [HTTP 0.9 - HTTP 2 发展史](http://www.ruanyifeng.com/blog/2016/08/http.html)

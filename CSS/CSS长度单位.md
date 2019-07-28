@@ -24,7 +24,7 @@
 ## 百分比
 　　百分比的计算值通常是以 **元素的包含块为对象** 进行计算，包含块不一定是其父元素。一个元素的包含块受其 position 属性值的影响：
 
-1. static 或 relative：父元素的 content-box区域；或者最近的建立格式上下文的祖先元素，比如：table 容器，flex 容器。
+1. static 或 relative：父元素的 content-box 区域；或者最近的建立格式上下文的祖先元素，比如：table 容器，flex 容器。
 
 2. absolute：最近的非 static 祖先元素的 padding-box 区域。
 

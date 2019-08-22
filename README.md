@@ -2,7 +2,7 @@
 这里是本人用来复习的前端技术栈和整理的一些面经，希望能获得大家的 star ~
 * HTML
   - [HTML 标签总览](http://www.w3school.com.cn/tags/index.asp)
-  - [块级元素 & 行内元素 & 行块级元素](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/HTML/块级元素&行内元素&行块级元素.md)
+  - [块级元素 & 行内元素 & 行块级元素](./HTML/块级元素&行内元素&行块级元素.md)
   - [HTML5 新特性 & 新功能](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/HTML/HTML5新特性.md)
 * CSS
   - [CSS 长度单位](https://github.com/TanYJie/Technology-Stack-Interview-Experience/blob/master/CSS/CSS长度单位.md)

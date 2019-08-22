@@ -35,6 +35,8 @@
 <br>
 
 # location.hash
+　　hash 实现路由背后的原理是在 window 对象监听 `onhashchange` 事件。
+
 ### 一、# 的含义
 　　# 代表网页中的一个位置。如：http://localhost：8080/cbuild/index.html#one 就代表网页 index.html 的 one 位置。浏览器读取这个 URL 后，会自动将 one 位置滚动至可视区域。
 
@@ -43,7 +45,7 @@
  * 使用 id 属性，比如`<div id="print"></div>`
 
 ### 二、HTTP 请求不包括 #
-　　比如： http://localhost：8081/cbuild/index.html#first 浏览器实际发出的请求是这样的，不包含 #first
+　　比如： http://localhost:8081/cbuild/index.html#first 浏览器实际发出的请求是这样的，不包含 #first
 ```http
 GET /index.html  
 ```
@@ -60,10 +62,6 @@ Host: www.example.com
 ```
 　　可以看到，#fff 被省略了，只有将 # 转码为 %23，浏览器才会将其作为实义字符处理。也就是说，上面的网址应该被写成：http://www.example.com/?color=%23fff
 
-### 四、改变 # 不触发网页重载
-　　单单改变 # 后的部分，浏览器只会滚动到相应位置，不会重新加载网页。
-
-
 ### 五、改变 # 会改变浏览器的访问历史
 　　每一次改变 # 后的部分，都会在浏览器的访问历史中增加一个记录，使用"后退"按钮，就可以回到上一个位置。
 
@@ -73,3 +71,15 @@ Host: www.example.com
 
 ### 七、onhashchange 事件
 　　这是一个 HTML5 新增的事件，当 # 值发生变化时，就会触发这个事件。
+
+<br>
+
+# 两种模式的对比
+* history 模式的优点：
+  * pushState 设置的 url 可以是同源下的任意 url ；而 hash 只能修改 # 后面的部分，因此只能设置当前 url 同文档的 url。
+  * pushState 通过 stateObject 参数可以将任何数据类型添加到记录中；hash 只能添加短字符串。
+  * pushState 可以设置额外的 title 属性供后续使用。
+  
+* history 模式的缺点：
+  * history 在刷新页面时，如果 URL 匹配不到服务器的任何静态资源，就会出现 404。hash 模式下，仅 # 之前的内容包含在 http 请求中，对后端来说，即使没有对路由做到全面覆盖，也不会报 404。
+  

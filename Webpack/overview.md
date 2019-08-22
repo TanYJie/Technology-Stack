@@ -1,6 +1,7 @@
 # Webpack 基础总结
+* [术语表定义](#webpack-术语表定义)
 
-# webpack 术语表定义
+## webpack 术语表定义
 * module: 离散的功能块，提供比完整程序更小的体积。可以是 ESM 模块，也可以是 commonJS 或者 AMD 模块
 
 * chunk: 打包过程中被操作的模块文件

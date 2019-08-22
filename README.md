@@ -76,7 +76,7 @@
   - [官方文档](https://www.webpackjs.com/)
   - [知乎教程](https://zhuanlan.zhihu.com/p/57722935?utm_source=qq&utm_medium=social&utm_oi=910792540654022656)
   - [Loader & Plugin](./Webpack/Loader&Plugin.md)
-  - [Code Splitting](./Webpack/Code-Splitting.md)
+  - [Code Splitting](./Webpack/CodeSplitting.md)
 * Node
   - Node 的模块实现
   - [包和 NPM](./Node/包和NPM.md)

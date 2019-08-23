@@ -1,5 +1,5 @@
 # SPA 及其实现原理
-　　单页 Web 应用（single page web application，SPA），就是只有一张 Web 页面的应用，是加载单个 HTML 页面并在用户与应用程序交互时动态更新该页面的 Web应用程序。
+　　单页 Web 应用（single page web application，SPA），就是只有一张 Web 页面的应用，是加载单个 HTML 页面并在用户与应用程序交互时动态更新该页面的 Web 应用程序。
 
 　　通常 SPA 中前端路由有 2 种实现方式：
 * [`window.history`](#windowhistory)
@@ -75,6 +75,9 @@ Host: www.example.com
 <br>
 
 # 两种模式的对比
+* 最大的区别：
+  * hash 内容不会放到 http 请求中，仅 # 之前的内容包含在 http 请求中
+  
 * history 模式的优点：
   * pushState 设置的 url 可以是同源下的任意 url ；而 hash 只能修改 # 后面的部分，因此只能设置当前 url 同文档的 url。
   * pushState 通过 stateObject 参数可以将任何数据类型添加到记录中；hash 只能添加短字符串。

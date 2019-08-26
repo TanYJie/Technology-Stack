@@ -67,7 +67,7 @@
     - [JavaScript 性能调优](./前端进阶/前端性能/JavaScript性能调优.md)
     - [Vue 性能调优](./前端进阶/前端性能/Vue性能调优.md)
     - [首屏性能优化](./前端进阶/前端性能/首屏性能调优.md)
-    - [服务器渲染 vs 预渲染（SSR & Prerendering）](./master/前端进阶/前端性能/SSR&Prerendering.md)
+    - [服务器渲染 vs 预渲染（SSR & Prerendering）](./前端进阶/前端性能/SSR&Prerendering.md)
   * 设计模式（部分）
     - 创建型设计模式（单例模式、工厂模式、原型模式）
     - 结构型设计模式（适配器模式、桥接模式、组合模式、装饰模式、享元模式、代理模式）

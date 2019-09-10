@@ -7,9 +7,9 @@ function binarySearch(arr,low, high, key) {
         return mid;
     }else if (arr[mid] > key){
         high = mid - 1;
-        return binary_search(arr, low, high, key);
+        return binarySearch(arr, low, high, key);
     }else if (arr[mid] < key){
         low = mid + 1;
-        return binary_search(arr, low, high, key);
-	}
+        return binarySearch(arr, low, high, key);
+    }
 };

@@ -33,7 +33,7 @@
 * 浏览器
   - [BOM](./浏览器/BOM.md)
   - [从输入 url 到页面加载完成的全过程](https://www.cnblogs.com/daijinxue/p/6640153.html)
-  - [回流与重绘（reflow & repaint）](.浏览器/回流与重绘.md)
+  - [回流与重绘（reflow & repaint）](./浏览器/回流与重绘.md)
 * 服务端与网络
   - [网络七层模型](./服务端与网络/网络七层模型.md)
   - [TCP](./服务端与网络/TCP.md)
